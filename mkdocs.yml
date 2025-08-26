@@ -1,6 +1,9 @@
 site_name: Kelowna Islamic Center
 site_url: https://mydomain.org/docs
 
+docs_dir: content
+site_dir: docs
+
 nav:
   - Home: index.md
   - Architecture:
