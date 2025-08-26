@@ -1,0 +1,70 @@
+site_name: Kelowna Islamic Center
+site_url: https://mydomain.org/docs
+
+nav:
+  - Home: index.md
+  - Architecture:
+      - Overview: architecture/index.md
+      - Application Architecture: architecture/application-architecture.md
+      - Internationalization: architecture/internationalization.md
+      - Accessibility: architecture/accessibility.md
+      - Design Language: architecture/design-language.md
+
+  - Server Side:
+      - Overview: server-side/index.md
+      - Prayer Times API: server-side/prayer-times-api.md
+      - Cloud Functions: server-side/cloud-functions.md
+      - Cloud Messaging: server-side/cloud-messaging.md
+      - Cloud Functions Reference:
+        - AnnouncementAlert: server-side/cloud-functions/announcement-alert.md
+        - PrayerTimesFetch: server-side/cloud-functions/prayer-times-fetch.md
+        - SendPrayerAlert: server-side/cloud-functions/send-prayer-alert.md
+        - PrayerTimesAlertScheduler: server-side/cloud-functions/prayer-times-alert-scheduler.md
+
+  - Mobile App:
+      - Overview: mobile-app/index.md
+      - Architecture:
+        - Application Architecture: mobile-app/architecture/application-architecture.md
+        - Background Services: mobile-app/architecture/background-services.md
+        - Admin Tools: mobile-app/architecture/admin-tools.md
+        - Notifications: mobile-app/architecture/notifications.md
+      - Development:
+        - Installation: mobile-app/development/installation.md
+        - Android Setup: mobile-app/development/android-setup.md
+        - iOS Setup: mobile-app/development/ios-setup.md
+        - Building: mobile-app/development/building.md
+        - Distribution: mobile-app/development/distribution.md
+
+  - Kiosk App:
+      - Overview: kiosk-app/index.md
+      - Installation: kiosk-app/installation.md
+      - Features: kiosk-app/features.md
+      - Deployment: kiosk-app/deployment.md
+
+theme:
+  name: material
+  logo: assets/logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: light green
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# 🔹 Repo link in top bar
+repo_url: https://github.com/Kelowna-Islamic-Center
+repo_name: View Repos on Github
+repo_icon: fontawesome/brands/github
