@@ -19,10 +19,10 @@ nav:
       - Cloud Functions: server-side/cloud-functions.md
       - Cloud Messaging: server-side/cloud-messaging.md
       - Cloud Functions Reference:
-        - AnnouncementAlert: server-side/cloud-functions/announcement-alert.md
         - PrayerTimesFetch: server-side/cloud-functions/prayer-times-fetch.md
-        - SendPrayerAlert: server-side/cloud-functions/send-prayer-alert.md
+        - AnnouncementAlert: server-side/cloud-functions/announcement-alert.md
         - PrayerTimesAlertScheduler: server-side/cloud-functions/prayer-times-alert-scheduler.md
+        - SendPrayerAlert: server-side/cloud-functions/send-prayer-alert.md
 
   - Mobile App:
       - Overview: mobile-app/index.md
