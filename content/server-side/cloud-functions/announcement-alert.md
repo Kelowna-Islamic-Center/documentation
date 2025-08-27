@@ -28,7 +28,7 @@ This function:
 | Name       | Type     | Required | Description |
 |------------|----------|----------|-------------|
 | `docId`    | string   | Yes      | The Firestore document ID of the announcement. |
-| `platforms`| string[] | No       | Platforms the announcement applies to. Must include `"mobile"` to trigger notifications. |
+| `platforms`| string[] | No       | Platforms the announcement applies to. Must include atleast `"mobile"`, `"web"`, or both to trigger notifications. |
 | `title`    | string   | Yes      | The announcement title. |
 | `description` | string | Yes     | Announcement body text. |
 
