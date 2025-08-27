@@ -2,7 +2,7 @@
 
 **Type:** HTTP Function (onRequest)
 
-**Endpoint:** `/prayerTimesFetch`
+**Endpoint:** [`prayertimesfetch-ilgk6gl75q-uc.a.run.app/`](https://prayertimesfetch-ilgk6gl75q-uc.a.run.app/)
 
 ---
 
