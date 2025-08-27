@@ -14,7 +14,7 @@
         <link rel="prev" href="../architecture/design-language/">
       
       
-        <link rel="next" href="prayer-times-api/">
+        <link rel="next" href="cloud-functions/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#back-end-architecture-overview" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -577,6 +582,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -589,28 +608,61 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="prayer-times-api/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Prayer Times API
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-server-side-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of Server-Side Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -645,11 +697,55 @@
   
   
     <li class="md-nav__item">
-      <a href="cloud-messaging/" class="md-nav__link">
+      <a href="prayer-times-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cloud Messaging
+    Prayer Times API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="announcements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Announcements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prayer-reminders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prayer Reminders
     
   </span>
   
@@ -682,10 +778,106 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="development/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="development/deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -697,34 +889,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             Cloud Functions Reference
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="cloud-functions/announcement-alert/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    AnnouncementAlert
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -755,11 +925,11 @@
   
   
     <li class="md-nav__item">
-      <a href="cloud-functions/send-prayer-alert/" class="md-nav__link">
+      <a href="cloud-functions/announcement-alert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    SendPrayerAlert
+    AnnouncementAlert
     
   </span>
   
@@ -782,6 +952,28 @@
   
   <span class="md-ellipsis">
     PrayerTimesAlertScheduler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cloud-functions/send-prayer-alert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SendPrayerAlert
     
   </span>
   
@@ -1326,6 +1518,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-server-side-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of Server-Side Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1344,9 +1582,63 @@
   
 
 
-  <h1>Overview</h1>
-
-
+<h1 id="back-end-architecture-overview">Back-end Architecture Overview</h1>
+<p>The <strong>server-side</strong> of the Kelowna Islamic Center (KIC) ecosystem is powered by <strong>Firebase Cloud Functions</strong>, <strong>Firestore</strong>, and <strong>Cloud Tasks</strong>.  </p>
+<p>These backend services handle the <strong>automation, scheduling, and delivery</strong> of notifications and content to the mobile app, web kiosk, and other client platforms.</p>
+<p>This section of the documentation provides a complete reference for how these server-side processes work, how they are structured, and how to extend or troubleshoot them.</p>
+<hr />
+<h2 id="purpose-of-server-side-functions">Purpose of Server-Side Functions</h2>
+<p>The KIC mobile and web platforms rely on accurate, timely, and consistent information.<br />
+Server-side functions ensure that:</p>
+<ul>
+<li><strong>Prayer reminders</strong> are fetched, scheduled, and delivered without manual intervention.</li>
+<li><strong>Announcements</strong> are instantly broadcast to the community when new updates are posted.</li>
+<li>Notifications are localized to user preffered languages and properly routed to users who have opted in.</li>
+<li>System complexity (timezones, retries, scheduling, and message formatting) is all handled automatically in the backend.</li>
+</ul>
+<hr />
+<h2 id="key-components">Key Components</h2>
+<p><strong>1. Get Prayer Times</strong></p>
+<ul>
+<li>Fetches latest Athan and Iqamah times accurately for each prayer.</li>
+<li>Resolve prayer times based on selected calculation method. </li>
+<li>See: <a href="prayer-times-api/">Prayer Times API</a></li>
+</ul>
+<p><strong>2. Announcements</strong></p>
+<ul>
+<li>Firestore-backed system for storing announcements.  </li>
+<li>Automatically triggers notifications when new announcements are created.  </li>
+<li>See: <a href="announcements/">Announcements</a></li>
+</ul>
+<p><strong>3. Prayer Reminders</strong></p>
+<ul>
+<li>Daily scheduler (<code>prayerTimesAlertScheduler</code>) fetches and queues reminders.  </li>
+<li>Task queue processor (<code>sendPrayerAlert</code>) dispatches localized push notifications for Athan and Iqamah.  </li>
+<li>See: <a href="prayer-reminders/">Prayer Reminders</a></li>
+</ul>
+<p><strong>4. Supporting Infrastructure</strong></p>
+<ul>
+<li><strong>Firestore</strong> – Persistent storage of announcements.  </li>
+<li><strong>Cloud Tasks</strong> – Time-precise delivery of prayer notifications.  </li>
+<li><strong>Cloud Messaging (FCM)</strong> – Notification delivery to mobile apps.</li>
+</ul>
+<hr />
+<h2 id="developer-notes">Developer Notes</h2>
+<ul>
+<li>All notifications are <strong>topic-based</strong> (<code>announcements</code>, <code>athanAlert</code>, <code>iqamah*MinuteAlert</code>, etc.), giving clients granular control over what to subscribe to.</li>
+<li>Timezones are managed differently on client where it is local masjid time (<code>America/Vancouver</code>) and the server where it is server region (<code>America/Chicago</code>).</li>
+<li>Functions are written to <strong>fail gracefully</strong> (e.g., no notification if config is missing, retries for transient errors).</li>
+<li>This system is <strong>event-driven and fully automated</strong> — once deployed and configured, minimal admin intervention is needed.</li>
+</ul>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>Explore each feature in detail:</p>
+<ul>
+<li><a href="cloud-functions/">Cloud Functions Overview</a></li>
+<li><a href="prayer-times-api/">Prayer Times API</a></li>
+<li><a href="announcements/">Announcements</a>  </li>
+<li><a href="prayer-reminders/">Prayer Reminders</a></li>
+</ul>
 
 
 
