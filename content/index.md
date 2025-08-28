@@ -22,7 +22,7 @@ It manages:
 - **Announcements:** Event-driven notifications sent when new announcements are created.
 - **Cloud Messaging:** Delivery of notifications to the mobile apps.  
 
-Previous versions relied on a PHP server; the migration to Cloud Functionsn was made to reduce maintenance and administration overhead, as no traditional managed server is required.
+Previous versions relied on a PHP server; the migration to Cloud Functions was made to reduce maintenance and administration overhead, as no traditional managed server is required.
 
 ---
 

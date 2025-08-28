@@ -1,0 +1,182 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" version="28.1.1">
+  <diagram name="Page-1" id="RSvIRuHPwOjU62XmJuAu">
+    <mxGraphModel dx="2633" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-12" target="ci0IOsUcQmMYfO2dz6Uz-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-160" y="230" />
+              <mxPoint x="-90" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-12" value="&lt;div&gt;BCMA API&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=10;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-13" target="ci0IOsUcQmMYfO2dz6Uz-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="230" />
+              <mxPoint x="-90" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-13" value="&lt;div&gt;Islamic Finder API&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=10;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-14" target="ci0IOsUcQmMYfO2dz6Uz-64">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="720" />
+              <mxPoint x="110" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-74" value="Get prayer times" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-69">
+          <mxGeometry x="-0.2169" y="2" relative="1" as="geometry">
+            <mxPoint x="88" y="97" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-14" value="&lt;i&gt;HTTP&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;prayerTimesFetch&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Function&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="290" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-15" value="prayerTimesFetch API" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=10;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="-153.75" y="360" width="127.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-50" value="&lt;div&gt;&lt;i&gt;onFirestoreDocumentCreated&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;b&gt;sendAnnouncementAlert&lt;/b&gt;&lt;br&gt;Function&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="1">
+          <mxGeometry x="190" y="280" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-53" target="ci0IOsUcQmMYfO2dz6Uz-64">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="410" />
+              <mxPoint x="140" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-81" value="Get Announcements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-80">
+          <mxGeometry x="-0.1147" relative="1" as="geometry">
+            <mxPoint y="178" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-53" value="Firestore Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=10;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="1">
+          <mxGeometry x="110" y="140" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-64" value="Client:&lt;br&gt;Kiosk App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="50" y="610" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-76" value="Firebase SDK" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="390" y="220" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=45;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-76" target="ci0IOsUcQmMYfO2dz6Uz-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-88" value="New Announcement Added" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-77">
+          <mxGeometry x="-0.0007" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=52.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-53" target="ci0IOsUcQmMYfO2dz6Uz-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-84" value="New Announcement Added Trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-83">
+          <mxGeometry x="0.3954" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-14" target="ci0IOsUcQmMYfO2dz6Uz-85">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="750" />
+              <mxPoint x="270" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-85" value="Client:&lt;br&gt;&lt;div&gt;Mobile App&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="210" y="610" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=65;entryDy=70;entryPerimeter=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-85" target="ci0IOsUcQmMYfO2dz6Uz-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-87" value="Admin creates Announcement" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-86">
+          <mxGeometry x="0.2379" y="-4" relative="1" as="geometry">
+            <mxPoint x="11" y="94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-89" value="Firebase Cloud Messaging" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="410" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=45;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-50" target="ci0IOsUcQmMYfO2dz6Uz-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.637;exitY=0.98;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-89" target="ci0IOsUcQmMYfO2dz6Uz-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-93" value="New announcement notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-92">
+          <mxGeometry x="0.0162" y="2" relative="1" as="geometry">
+            <mxPoint y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-94" value="Prayer Times System" style="swimlane;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="110" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-95" value="Announcements System" style="swimlane;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="80" y="110" width="460" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-96" value="Prayer Times Notifications System" style="swimlane;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="560" y="110" width="400" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-28" value="&lt;div&gt;&lt;i&gt;Scheduled every day at (12 AM)&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;b&gt;prayerTimesAlertScheduler&lt;/b&gt;&lt;br&gt;Function&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="ci0IOsUcQmMYfO2dz6Uz-96">
+          <mxGeometry x="10" y="190" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-29" value="&lt;div&gt;&lt;i&gt;onDispatch&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;b&gt;sendPrayerAlert&lt;/b&gt;&lt;br&gt;Function Instance&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="ci0IOsUcQmMYfO2dz6Uz-96">
+          <mxGeometry x="210" y="190" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-31" value="Google Cloud&lt;br&gt;&lt;br&gt;Cloud Tasks" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=20;fontSize=10;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="ci0IOsUcQmMYfO2dz6Uz-96">
+          <mxGeometry x="140" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;" edge="1" parent="ci0IOsUcQmMYfO2dz6Uz-96" source="ci0IOsUcQmMYfO2dz6Uz-28" target="ci0IOsUcQmMYfO2dz6Uz-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-38" value="&lt;div&gt;5x athan reminders&lt;/div&gt;&lt;div&gt;30x iqamah reminders&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-32">
+          <mxGeometry x="-0.1249" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-44" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0;exitDx=120;exitDy=45;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="ci0IOsUcQmMYfO2dz6Uz-96" source="ci0IOsUcQmMYfO2dz6Uz-31" target="ci0IOsUcQmMYfO2dz6Uz-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="110" as="sourcePoint" />
+            <mxPoint x="380" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="295" y="95" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-45" value="x35 instances" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-44">
+          <mxGeometry x="-0.32" relative="1" as="geometry">
+            <mxPoint y="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-97" value="Firebase Cloud Messaging" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d0cee2;strokeColor=#56517e;fontSize=10;" vertex="1" parent="ci0IOsUcQmMYfO2dz6Uz-96">
+          <mxGeometry x="250" y="300" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=45;entryDy=0;entryPerimeter=0;" edge="1" parent="ci0IOsUcQmMYfO2dz6Uz-96" source="ci0IOsUcQmMYfO2dz6Uz-29" target="ci0IOsUcQmMYfO2dz6Uz-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=65;exitDy=70;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ci0IOsUcQmMYfO2dz6Uz-97" target="ci0IOsUcQmMYfO2dz6Uz-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-103" value="Prayer Times Reminder Notifications" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ci0IOsUcQmMYfO2dz6Uz-98">
+          <mxGeometry x="0.3455" y="5" relative="1" as="geometry">
+            <mxPoint x="-2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ci0IOsUcQmMYfO2dz6Uz-101" value="Get prayer times" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="1">
+          <mxGeometry y="750" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
