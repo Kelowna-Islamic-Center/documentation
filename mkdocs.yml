@@ -54,21 +54,10 @@ theme:
     - navigation.tabs
     - navigation.sections
   palette: 
-    # Palette toggle for light mode
-    - scheme: default
-      primary: black
-      accent: light green
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       primary: black
       accent: green
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
 # 🔹 Repo link in top bar
 repo_url: https://github.com/Kelowna-Islamic-Center
