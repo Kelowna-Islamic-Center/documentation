@@ -36,8 +36,6 @@ nav:
         - Notifications: mobile-app/architecture/notifications.md
       - Development:
         - Installation: mobile-app/development/installation.md
-        - Android Setup: mobile-app/development/android-setup.md
-        - iOS Setup: mobile-app/development/ios-setup.md
         - Building: mobile-app/development/building.md
         - Distribution: mobile-app/development/distribution.md
 
@@ -68,6 +66,11 @@ markdown_extensions:
   - admonition
   - codehilite
   - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
