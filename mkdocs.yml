@@ -35,8 +35,7 @@ nav:
         - Notifications: mobile-app/architecture/notifications.md
       - Development:
         - Installation: mobile-app/development/installation.md
-        - Building: mobile-app/development/building.md
-        - Distribution: mobile-app/development/distribution.md
+        - Building & Distribution: mobile-app/development/building.md
 
   - Kiosk App:
       - Overview: kiosk-app/index.md
