@@ -9,8 +9,7 @@ nav:
       - Project Overview: index.md
       - Application Architecture: architecture/application-architecture.md
       - Internationalization: architecture/internationalization.md
-      - Accessibility: architecture/accessibility.md
-      - Design Language: architecture/design-language.md
+      - Design Language & Accessibility: architecture/design-language.md
 
   - Server Side:
       - Overview: server-side/index.md
