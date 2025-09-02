@@ -14,7 +14,7 @@
         <link rel="prev" href="../application-architecture/">
       
       
-        <link rel="next" href="../accessibility/">
+        <link rel="next" href="../design-language/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#internationalization-i18n-guidelines" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -411,6 +416,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Internationalization
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -423,28 +442,76 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessibility/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-of-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State of Internationalization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current State of Internationalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Cloud Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Mobile App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiosk-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Kiosk App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guidelines-for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidelines for Developers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -461,7 +528,7 @@
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -1000,28 +1067,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/background-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../mobile-app/architecture/admin-tools/" class="md-nav__link">
         
   
@@ -1044,11 +1089,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/notifications/" class="md-nav__link">
+      <a href="../../mobile-app/architecture/background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1141,29 +1186,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mobile-app/development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1342,6 +1365,67 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-of-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State of Internationalization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current State of Internationalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Cloud Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Mobile App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiosk-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Kiosk App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guidelines-for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidelines for Developers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1360,9 +1444,63 @@
   
 
 
-  <h1>Internationalization</h1>
-
-
+<h1 id="internationalization-i18n-guidelines">Internationalization (i18n) Guidelines</h1>
+<p>Internationalization (i18n) is a requirement across all KIC applications and backend services. Since the community includes a significant number of refugees who primarily speak arabic, every user-facing feature must be designed with localization in mind.</p>
+<hr />
+<h2 id="current-state-of-internationalization">Current State of Internationalization</h2>
+<h3 id="cloud-functions">✅ Cloud Functions</h3>
+<p>All server-side notifications (e.g., athan alerts, iqamah reminders, announcements) are internationalized before being sent to Firebase Cloud Messaging (FCM).  </p>
+<ul>
+<li>Each notification is translated into supported languages using <code>locale.json</code>.</li>
+<li>Clients receive the correct localized message depending on their language/topic subscription.</li>
+</ul>
+<h3 id="mobile-app">✅ Mobile App</h3>
+<p>The Flutter Mobile App is fully internationalized:</p>
+<ul>
+<li>UI components, labels, and system messages are all language-aware.</li>
+<li>Users can switch languages in-app, with translations loaded dynamically.</li>
+<li>Notifications received from the backend are displayed in the correct language automatically.</li>
+</ul>
+<h3 id="kiosk-app">⚠️ Kiosk App</h3>
+<p>The SvelteKit Kiosk App is <strong>NOT YET</strong> internationalized:</p>
+<ul>
+<li>Currently, it only displays English text.</li>
+<li>This is an area to focus on in future development:<ul>
+<li>UI strings should be stored in translation files rather than hard-coded.</li>
+<li>Language selection should be configurable (e.g., default Masjid language or a rotating display).</li>
+<li>Consistency with mobile app translations where possible.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="guidelines-for-developers">Guidelines for Developers</h2>
+<ol>
+<li>
+<p><strong>Never hardcode strings</strong> in UI or notifications.<br />
+   Store them in translation files (JSON, ARB, or similar) and load dynamically. The Flutter mobile app already utilizes the Flutter Internationlization package to facilitate this.</p>
+</li>
+<li>
+<p><strong>Follow the existing localization pattern</strong> in your repo.<br />
+   For example:</p>
+</li>
+<li><strong>Flutter:</strong> <code>.arb</code> files with <code>intl</code> package.</li>
+<li><strong>Cloud Functions:</strong> <code>locale.json</code> and topic-based FCM notifications.</li>
+<li>
+<p><strong>Future Kiosk App (Not yet implemented):</strong> JSON translation files and <code>i18n</code> libraries.</p>
+</li>
+<li>
+<p><strong>Always add translations</strong> for every new feature:</p>
+</li>
+<li>New notification types.</li>
+<li>New UI components.</li>
+<li>
+<p>Error messages and system alerts.</p>
+</li>
+<li>
+<p><strong>Test with multiple languages</strong> before merging changes.<br />
+   Missing translations or fallback to English should be logged and fixed.</p>
+</li>
+</ol>
 
 
 

@@ -14,7 +14,7 @@
         <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../background-services/">
+        <link rel="next" href="../admin-tools/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#mobile-app-architecture" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -422,33 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../architecture/design-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -981,6 +964,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Application Architecture
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -993,28 +990,85 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background-services/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. View
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-additions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Additions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1049,11 +1103,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+      <a href="../background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1149,29 +1203,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1350,6 +1382,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. View
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-additions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Additions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1368,9 +1470,55 @@
   
 
 
-  <h1>Application Architecture</h1>
-
-
+<h1 id="mobile-app-architecture">Mobile App Architecture</h1>
+<p>The Kelowna Islamic Center Mobile App is built with Flutter and follows a simplified <strong>Model–View–Controller (MVC)</strong> architecture. This approach keeps the project maintainable, easy to understand, and scalable for future features.</p>
+<hr />
+<h2 id="architecture-overview">Architecture Overview</h2>
+<h3 id="1-model">1. <strong>Model</strong></h3>
+<p>The Model represents the data structures of the app, including:</p>
+<ul>
+<li>Prayer Times (fetched from the API)  </li>
+<li>Announcements (fetched in real-time from Firestore)  </li>
+<li>Notification Payloads (from Cloud Messaging)  </li>
+</ul>
+<p>Models are typically simple Dart classes or data objects.</p>
+<hr />
+<h3 id="2-view">2. <strong>View</strong></h3>
+<p>The View is just the main Flutter UI Widget for a specific screen:</p>
+<ul>
+<li>Prayer timetable screens  </li>
+<li>Announcements feed screen</li>
+<li>Settings screen</li>
+<li>Admin tools and Authentication screens</li>
+</ul>
+<p>Views are reactive and update automatically when data from the controller or services changes.</p>
+<hr />
+<h3 id="3-controller">3. <strong>Controller</strong></h3>
+<p>Controllers manage user interactions and business logic. Flutter does let you combine controllers and views by having all the logic with the widgets but this shoud be avoided. With this seperated approach, files remain short, easy to maiontaine, and you can share logic with other controllers (ex. settings controller is used by other controllers to see what the user selected).</p>
+<p>Controllers do things like:</p>
+<ul>
+<li>Handling API responses</li>
+<li>Managing Firestore streams</li>
+<li>Coordinating between services and updating views</li>
+</ul>
+<p>This layer ensures that views remain focused only on the UI and are not bloated with logic.</p>
+<hr />
+<h3 id="4-services">4. <strong>Services</strong></h3>
+<p>Background processes are referred to as services. These files are similar to controllers however they are background processes and do not run in the foreground. Periodic tasks and cloud messaging are handled through services.</p>
+<p>There are currently two active services:</p>
+<ul>
+<li><code>cloud_messaging_service.dart</code> → Handles Firebase Cloud Messaging subscription, notification parsing, and topic management.  </li>
+<li><code>api_fetch_service.dart</code> → Handles periodic HTTP requests to the <a href="../../../server-side/prayer-times-api/">Prayer Times API</a> so the app works for devices without mobile data.</li>
+</ul>
+<p>Read more about services on the <a href="../background-services/">Background Services</a> page.</p>
+<hr />
+<h2 id="future-additions">Future Additions</h2>
+<p><strong>Unit Testing</strong> - Currently, unit testing is not implemented. In the future, adding tests for controllers and services will:</p>
+<ul>
+<li>Ensure correctness of data parsing.  </li>
+<li>Prevent regressions in notifications and API calls.  </li>
+<li>Improve overall maintainability.</li>
+</ul>
 
 
 

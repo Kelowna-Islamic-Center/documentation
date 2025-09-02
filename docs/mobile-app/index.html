@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mobile-app-overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -422,33 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../architecture/design-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -913,6 +896,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -924,6 +921,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developement
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1003,28 +1046,6 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/background-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="architecture/admin-tools/" class="md-nav__link">
         
   
@@ -1047,11 +1068,11 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/notifications/" class="md-nav__link">
+      <a href="architecture/background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1147,29 +1168,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1348,6 +1347,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developement
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1366,9 +1402,52 @@
   
 
 
-  <h1>Overview</h1>
-
-
+<h1 id="mobile-app-overview">Mobile App Overview</h1>
+<p>The Kelowna Islamic Center Mobile App is the most used app and the primary tool the community uses to stay connected with the masjid. Its core functionality is the prayer times clock with all secondary functionality being added on top of this.</p>
+<p>This entire section of the documentation explains how the mobile app works, important things to note about it, and how to get started with its development.</p>
+<p>The application is built with Flutter allowing it to have a single codebase for both Android and iOS.</p>
+<p>You can find the full source code for the mobile app on Github:</p>
+<p><a class="md-button" href="https://github.com/Kelowna-Islamic-Center/mobile"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Kelowna-Islamic-Center/mobile</a></p>
+<hr />
+<h2 id="high-level-features">High-Level Features</h2>
+<ul>
+<li><strong>Prayer Time Clock</strong><ul>
+<li>Fetched automatically and displayed in an easy-to-use interface emulating the kiosk app.</li>
+</ul>
+</li>
+<li><strong>Announcements</strong><ul>
+<li>Delivered instantly through FCM and managed by administrators.</li>
+</ul>
+</li>
+<li><strong>Notifications</strong><ul>
+<li>Athan, Announcements, and Iqamah reminder notifications delivered through FCM</li>
+</ul>
+</li>
+<li><strong>Admin Tools</strong><ul>
+<li>The mobile app is the only place to modify annoncements on the mobile app and the kiosk app aswell as sending push notifications to all community members.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="architecture">Architecture</h2>
+<p>The app follows a Model-View-Controller (MVC) pattern for simplicity and maintainability:  </p>
+<ul>
+<li><strong>Controllers</strong> - Handle interaction between views and services.  </li>
+<li><strong>Views</strong> - Flutter UI screens displaying prayer times, announcements, and settings.  </li>
+<li><strong>Models</strong> - Represent core entities like Prayer Times and Announcements.  </li>
+<li><strong>Services</strong> - Dedicated files like <code>cloud_messaging_service.dart</code> and <code>api_fetch_service.dart</code> that manage external API calls and notifications.  </li>
+</ul>
+<blockquote>
+<p>While unit tests are not yet implemented, they should be considered in future iterations to ensure broken updates are not built for production.  </p>
+</blockquote>
+<hr />
+<h2 id="developement">Developement</h2>
+<p>The app is is a Flutter application.
+For installation and deployment instructions, see:</p>
+<ul>
+<li><a href="development/installation/">Installation</a>  </li>
+<li><a href="./development/building.md.md">Deployment</a>  </li>
+</ul>
 
 
 

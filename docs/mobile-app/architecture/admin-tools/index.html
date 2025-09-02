@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/mobile-app/architecture/admin-tools/">
       
       
-        <link rel="prev" href="../background-services/">
+        <link rel="prev" href="../application-architecture/">
       
       
-        <link rel="next" href="../notifications/">
+        <link rel="next" href="../background-services/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#admin-tools-in-the-mobile-app" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -422,33 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../architecture/design-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -994,28 +977,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../background-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1025,6 +986,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Admin Tools
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1037,6 +1012,52 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications Integration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1049,11 +1070,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+      <a href="../background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1149,29 +1170,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1350,6 +1349,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notifications Integration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1368,9 +1404,30 @@
   
 
 
-  <h1>Admin Tools</h1>
-
-
+<h1 id="admin-tools-in-the-mobile-app">Admin Tools in the Mobile App</h1>
+<p>The mobile app includes a set of <strong>administrative tools</strong> that allow authorized masjid administrators to manage community updates.</p>
+<p>Include note about how to get authenticaion accessa dn future impormevent to it</p>
+<hr />
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Add Announcements</strong> → Create new announcements visible to all community members.  </li>
+<li><strong>Modify Announcements</strong> → Edit existing announcements to correct or update information.  </li>
+<li><strong>Delete Announcements</strong> → Remove outdated or incorrect announcements.  </li>
+</ul>
+<hr />
+<h2 id="security">Security</h2>
+<ul>
+<li>Admin tools are <strong>behind Firebase Authentication</strong>, ensuring that only authorized accounts can access them.  </li>
+<li>Non-admin users cannot view or interact with these tools.</li>
+</ul>
+<hr />
+<h2 id="notifications-integration">Notifications Integration</h2>
+<p>When an admin creates or modifies an announcement:  </p>
+<ul>
+<li>The <a href="../.">announcementsAlert</a> Cloud Function triggers automatically.  </li>
+<li>A notification is sent via <strong>Firebase Cloud Messaging (FCM)</strong> to all app users.  </li>
+</ul>
+<p>This ensures instant delivery of important information.  </p>
 
 
 

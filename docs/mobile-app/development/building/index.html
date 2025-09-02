@@ -14,7 +14,7 @@
         <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../distribution/">
+        <link rel="next" href="../../../kiosk-app/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Building - Kelowna Islamic Center Documentation</title>
+        <title>Building & Distribution - Kelowna Islamic Center Documentation</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#building-distributing-to-app-stores" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Building
+              Building & Distribution
             
           </span>
         </div>
@@ -422,33 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../architecture/design-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -995,28 +978,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/background-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../architecture/admin-tools/" class="md-nav__link">
         
   
@@ -1039,11 +1000,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/notifications/" class="md-nav__link">
+      <a href="../../architecture/background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1143,40 +1104,87 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Building & Distribution
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Building
+    Building & Distribution
     
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../distribution/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Distribution
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-for-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building for Android
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-for-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building for iOS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD (Future Work)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1350,6 +1358,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-for-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building for Android
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-for-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building for iOS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD (Future Work)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1368,9 +1422,110 @@
   
 
 
-  <h1>Building</h1>
-
-
+<h1 id="building-distributing-to-app-stores">Building &amp; Distributing to App Stores</h1>
+<p>This guide explains how to build and distribute the <strong>Kelowna Islamic Center Mobile App</strong> for both <strong>Android</strong> and <strong>iOS</strong>. The app is built with <strong>Flutter</strong> and connects to Firebase services (Authentication, Firestore, Cloud Messaging, and Cloud Functions).</p>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>You fully followed the <a href="../installation/">installation guide</a> and have all the SDKs and development environemnts setup.</li>
+<li>Have <strong>developer access</strong> to a Play Store Developer account (for Android)</li>
+<li>Have <strong>developer access</strong> to App Store Connect (for iOS)</li>
+<li>
+<p>Have connected the application to the production firebase project. You can follow the <a href="../installation/#5-firebase-setup">Installation Guide Firebase Guide</a> again if unsure.</p>
+<ul>
+<li><code>google-services.json</code> (Android)  </li>
+<li><code>GoogleService-Info.plist</code> (iOS)</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If these files are misconfigured or not created, Firebase features (authentication, messaging, Firestore, etc.) will not function.</p>
+</div>
+</li>
+</ul>
+<hr />
+<h2 id="building-for-android">Building for Android</h2>
+<p>Before beginning this part, ensure you have read and understood the <a href="https://docs.flutter.dev/deployment/android">official Flutter Android deployment guide</a> as this is just a short reference adapted from the official guide.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It advised that you use the official guide for your first deployment and only follow this as a future reference once you are familiar with the full process.</p>
+</div>
+<ol>
+<li>
+<p><strong>Signing</strong></p>
+<ol>
+<li>Create a <code>key.properties</code> file in the root of the <code>android</code> folder.</li>
+<li>
+<p>Add your store password, key passowrd, alias, and path to the keystore file to the <code>key.properties</code> file (you should have all of these provided if you are deploying to the official KIC Play Store listing). This should look something like this:</p>
+<div class="highlight"><pre><span></span><code>storePassword=myStorePassword
+keyPassword=myKeyPassword
+keyAlias=upload
+storeFile=/Users/MyUser/android-keys/upload-keystore.jks
+</code></pre></div>
+</li>
+<li>
+<p>Ensure <code>build.gradle</code> is updated with the signing configuration. This should already be the case and is not required unless you modified the gradle file.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Create a Release Build</strong></p>
+<p>Increment the version name and number in <code>pubspec.yaml</code>. Not doing this will cause Google Play to deny you from releasing the app as the version number will already be existing. This should look something like this if the previous version was <code>4.1.0+26</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.1.1+27</span>
+</code></pre></div>
+<p>and then build the release APK file:</p>
+<div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>build<span class="w"> </span>apk<span class="w"> </span>--release
+</code></pre></div>
+<p>or, the app bundle (this is recommended for Play Store):</p>
+<div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>build<span class="w"> </span>appbundle<span class="w"> </span>--release
+</code></pre></div>
+</li>
+<li>
+<p><strong>Distribution</strong></p>
+<ul>
+<li>Create a new release in the <strong>Google Play Console</strong></li>
+<li>Upload the generated <strong>AAB</strong> or <strong>APK</strong> file.</li>
+<li>For testing before release, use Internal Testing.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="building-for-ios">Building for iOS</h2>
+<p>Before beginning this part, ensure you have read and understood the <a href="https://docs.flutter.dev/deployment/ios">official Flutter iOS deployment guide</a> as this is just a short reference adapted from the official guide.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It advised that you use the official guide for your first deployment and only follow this as a future reference once you are familiar with the full process.</p>
+</div>
+<ol>
+<li>
+<p><strong>Xcode Configuration</strong></p>
+<ul>
+<li>Open the generated <code>ios/Runner.xcworkspace</code> in Xcode.</li>
+<li>Ensure the correct Apple Developer Team is selected.</li>
+<li>Configure signing and capabilities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a Release Build</strong></p>
+<div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>build<span class="w"> </span>ios<span class="w"> </span>--release
+</code></pre></div>
+</li>
+<li>
+<p><strong>Distribution</strong></p>
+</li>
+<li>
+<p>Use Xcode’s <strong>Archive &amp; Distribute</strong> option.</p>
+</li>
+<li>Distribute via <strong>TestFlight</strong> for internal/external testing.</li>
+<li>Submit to the <strong>App Store</strong> for public distribution.</li>
+</ol>
+<hr />
+<h2 id="cicd-future-work">CI/CD (Future Work)</h2>
+<p>Currently, builds are performed manually. In the future, <strong>CI/CD pipelines</strong> should be added through Github Actions to automate: </p>
+<ul>
+<li>Test runs before builds</li>
+<li>Automated distribution to Play Store/TestFlight</li>
+<li>Version bumping</li>
+</ul>
 
 
 

@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/architecture/design-language/">
       
       
-        <link rel="prev" href="../accessibility/">
+        <link rel="prev" href="../internationalization/">
       
       
         <link rel="next" href="../../server-side/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Design Language - Kelowna Islamic Center Documentation</title>
+        <title>Design Language & Accessibility - Kelowna Islamic Center Documentation</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#design-language-accessibility-guidelines" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Design Language
+              Design Language & Accessibility
             
           </span>
         </div>
@@ -424,28 +429,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -455,17 +438,68 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Design Language & Accessibility
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Design Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Standards
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1000,28 +1034,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/background-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../mobile-app/architecture/admin-tools/" class="md-nav__link">
         
   
@@ -1044,11 +1056,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/notifications/" class="md-nav__link">
+      <a href="../../mobile-app/architecture/background-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
@@ -1141,29 +1153,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mobile-app/development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1342,6 +1332,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Design Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Standards
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1360,9 +1378,67 @@
   
 
 
-  <h1>Design Language</h1>
-
-
+<h1 id="design-language-accessibility-guidelines">Design Language &amp; Accessibility Guidelines</h1>
+<p>To ensure consistency, usability, and inclusivity across all KIC applications, the following unified design language must be followed. This design language defines how applications look, feel, and interact with users, while prioritizing accessibility and legibility for all members of the community.</p>
+<p>This goes hand in hand with the internationalization requirement mentioned in the previous page.</p>
+<hr />
+<h2 id="core-design-principles">Core Design Principles</h2>
+<ol>
+<li>
+<p><strong>Masjid Color Palette</strong><br />
+   All apps and user interfaces should consistently use the Masjid’s color palette for all UI elements. This is the standard material design green colour palette that is natively included with Flutter. The colour code values can the found in the following diagram or on <a href="https://coolors.co/128c3f-4caf50-2ea76f-109e8e-009688-616161-212121-27272a-9e9e9e">Coolors</a>.</p>
+<p>You can use additional material design colours or variations however try to use this colour palette for the primary colours in all masjid designs.</p>
+<p><img alt="Colour Palette" src="../../assets/color-palette.png" /></p>
+</li>
+<li>
+<p><strong>Dark Mode Support</strong><br />
+   Dark mode is a requested feature from the community and must be supported in all applications:</p>
+<ul>
+<li>Respect system-wide dark mode preferences where possible.  </li>
+<li>Provide a manual toggle option for apps where appropriate. If not possible, prioritize dark mode over a lighter mode (for example the kiosk app is dark mode only)</li>
+<li>Ensure color choices maintain readability and proper contrast in both light and dark themes.</li>
+</ul>
+</li>
+<li>
+<p><strong>UI Scaling &amp; Responsiveness</strong><br />
+   Apps must scale properly across different screen sizes and resolutions:</p>
+<ul>
+<li><strong>Mobile App</strong> → must adjust to varying device resolutions and follow device-level accessibility scaling (dont hard code scaling values).  </li>
+<li><strong>Kiosk App</strong> → must dynamically adjust to large-screen displays in the Masjid hall. Text and critical information must remain legible from the end of the prayer hall.  </li>
+</ul>
+</li>
+<li>
+<p><strong>Consistency Across Platforms</strong><br />
+   Visual elements, such as buttons, typography, and layout, should follow a consistent design pattern to make switching between mobile and kiosk apps seamless for users. There is no official guide for this but the general rule is to follow <a href="https://m3.material.io/">Material design</a> (the default for the mobile app) as it is simple to implement.</p>
+</li>
+</ol>
+<hr />
+<h2 id="accessibility-standards">Accessibility Standards</h2>
+<p>Accessibility is not optional, it is a requirement as a lot of the community consists of older users who need accessiblity features to continue using the applications.</p>
+<ol>
+<li>
+<p><strong>Contrast &amp; Legibility</strong></p>
+<ul>
+<li>Ensure sufficient contrast between text and background in both light and dark modes.  </li>
+<li>Text must remain legible even in bright lighting conditions within the Masjid hall (Duhr time when the prayer hall is very bright).  </li>
+<li>Avoid using light gray text on white or dark gray text on black.  </li>
+</ul>
+</li>
+<li>
+<p><strong>Avoid Visual Overload</strong></p>
+<ul>
+<li>Minimize the use of multiple colors, patterns, or heavy backgrounds.</li>
+<li>Use a clean, minimal design to ensure readability at a distance (especially in kiosk app which is often viewed from the end of the hall).  </li>
+</ul>
+</li>
+<li>
+<p><strong>Scalable Typography</strong></p>
+<ul>
+<li>All text within the mobile app should support dynamic scaling to respect accessibility preferences (e.g., larger font settings scale all the text in the app).  </li>
+<li>Kiosk app text should be large and bolded so it visible from across the hall.</li>
+</ul>
+</li>
+</ol>
 
 
 

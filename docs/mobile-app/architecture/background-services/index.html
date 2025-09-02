@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/mobile-app/architecture/background-services/">
       
       
-        <link rel="prev" href="../application-architecture/">
+        <link rel="prev" href="../admin-tools/">
       
       
-        <link rel="next" href="../admin-tools/">
+        <link rel="next" href="../../development/installation/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#background-services" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -422,33 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/accessibility/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accessibility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../architecture/design-language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design Language
+    Design Language & Accessibility
     
   </span>
   
@@ -994,36 +977,6 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Background Services
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
@@ -1046,19 +999,102 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Background Services
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Notifications
+    Background Services
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#active-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Active Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cloud_messaging_servicedart" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. cloud_messaging_service.dart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-api_fetch_servicedart" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. api_fetch_service.dart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimental-background-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental Background Work
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1149,29 +1185,7 @@
         
   
   <span class="md-ellipsis">
-    Building
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../development/distribution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Distribution
+    Building & Distribution
     
   </span>
   
@@ -1350,6 +1364,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#active-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Active Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cloud_messaging_servicedart" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. cloud_messaging_service.dart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-api_fetch_servicedart" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. api_fetch_service.dart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimental-background-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental Background Work
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1368,9 +1434,37 @@
   
 
 
-  <h1>Background Services</h1>
-
-
+<h1 id="background-services">Background Services</h1>
+<p>As explained in the <a href="../application-architecture/">Application Architecture Section</a>, background processes in the mobile app are referred to as services.</p>
+<p>They share similarities with controllers but are distinct in that they run independently of the UI and handle tasks that must continue in the background. This separation ensures the app remains responsive while offloading recurring or asynchronous work to background layers.</p>
+<hr />
+<h2 id="active-services">Active Services</h2>
+<p>Currently, the app uses the following two core services:</p>
+<h3 id="1-cloud_messaging_servicedart">1. <code>cloud_messaging_service.dart</code></h3>
+<ul>
+<li>Manages Firebase Cloud Messaging (FCM) integration.  </li>
+<li>Handles topic subscriptions, such as <code>athanAlert</code> or <code>announcements</code>.  </li>
+<li>Parses notification payloads received from the server and prepares them for display.  </li>
+<li>Ensures users receive alerts even when the app is terminated. </li>
+</ul>
+<hr />
+<h3 id="2-api_fetch_servicedart">2. <code>api_fetch_service.dart</code></h3>
+<ul>
+<li>Periodically performs HTTP requests to the <a href="../../../server-side/prayer-times-api/">Prayer Times API</a> and caches them.</li>
+<li>Updates local prayer times so the app functions correctly even on devices that do not have consistent internet access or mobile data.  </li>
+<li>Provides redundancy in case cloud messaging fails, since prayer times are always available locally.</li>
+</ul>
+<hr />
+<h2 id="experimental-background-work">Experimental Background Work</h2>
+<p>In addition to the two stable services, there is ongoing experimentation with device-native athan and iqamah scheduling using the <a href="https://pub.dev/packages/workmanager"><code>workmanager</code></a> plugin.</p>
+<p>This was actually the previous implimentation before it was replaced with cloud messaging method usign the <code>prayerSchedulingAlert</code> and <code>sendPrayerAlert</code> Cloud functions. The reason for attempting to go back to workmanager is to gain more control over how notifications are delivered and to get more control over Athan Audio.</p>
+<p>The goal of this experimentation is to:  </p>
+<ul>
+<li>Move athan and iqamah reminders to on-device background tasks.  </li>
+<li>Reduce reliance on server-side scheduling and notifications.  </li>
+<li>Allow reminders to trigger even when there is no active internet connection.  </li>
+</ul>
+<p>At this stage, this work is considered <strong>experimental and not production-ready at all due to how aggressive iOS and Android are to background services</strong>. This area requires significant work to find the best way to get notifications delivered reliably especially when it's closed.</p>
 
 
 
