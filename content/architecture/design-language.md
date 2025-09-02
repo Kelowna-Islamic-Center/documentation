@@ -9,9 +9,11 @@ This goes hand in hand with the internationalization requirement mentioned in th
 ## Core Design Principles
 
 1. **Masjid Color Palette**  
-   All apps and user interfaces should consistently use the Masjid’s color palette for all UI elements. This is the standard material design green colour palette that is natively included with Flutter. The colour code values can the found in the following diagram:
+   All apps and user interfaces should consistently use the Masjid’s color palette for all UI elements. This is the standard material design green colour palette that is natively included with Flutter. The colour code values can the found in the following diagram or on [Coolors](https://coolors.co/128c3f-4caf50-2ea76f-109e8e-009688-616161-212121-27272a-9e9e9e).
 
-    > TO ADD COLOUR PALETTE HERE
+    You can use additional material design colours or variations however try to use this colour palette for the primary colours in all masjid designs.
+
+    ![Colour Palette](../assets/color-palette.png)
 
 2. **Dark Mode Support**  
    Dark mode is a requested feature from the community and must be supported in all applications:
