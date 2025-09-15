@@ -1142,9 +1142,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
+  <a href="#2-install-dependencies-setup-env" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Install Dependencies
+      2. Install Dependencies &amp; Setup env
     </span>
   </a>
   
@@ -1259,22 +1259,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-verify-installation" class="md-nav__link">
+  <a href="#9-verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Verify Installation
+      9. Verify Installation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-troubleshooting" class="md-nav__link">
+  <a href="#8-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Troubleshooting
+      8. Troubleshooting
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="9. Troubleshooting">
+    <nav class="md-nav" aria-label="8. Troubleshooting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1545,9 +1545,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-install-dependencies" class="md-nav__link">
+  <a href="#2-install-dependencies-setup-env" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Install Dependencies
+      2. Install Dependencies &amp; Setup env
     </span>
   </a>
   
@@ -1662,22 +1662,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-verify-installation" class="md-nav__link">
+  <a href="#9-verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Verify Installation
+      9. Verify Installation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-troubleshooting" class="md-nav__link">
+  <a href="#8-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Troubleshooting
+      8. Troubleshooting
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="9. Troubleshooting">
+    <nav class="md-nav" aria-label="8. Troubleshooting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1831,11 +1831,19 @@ Follow the official guide if this section does not work for you.</p>
 </div>
 </div>
 <hr />
-<h2 id="2-install-dependencies">2. Install Dependencies</h2>
+<h2 id="2-install-dependencies-setup-env">2. Install Dependencies &amp; Setup env</h2>
 <p>Run the following to install project dependencies:</p>
 <div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>pub<span class="w"> </span>get
 </code></pre></div>
-<p>After that is setup, configure either an Android environment, iOS environment, or both.</p>
+<p>Once installed, duplicate the <code>lib/config.example.dart</code> file as <code>lib/config.dart</code> and modify the following values in the config file. </p>
+<p>Leave everything else as default within the file unless required during development.</p>
+<div class="highlight"><pre><span></span><code><span class="p">...</span>
+<span class="c1">// Replace &#39;yourapilink&#39; with your prayerTimesFetch function API endpoint</span>
+<span class="kd">static</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="n">apiLink</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;yourapilink&quot;</span><span class="p">;</span>
+<span class="kd">static</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="n">apiLinkForNextDay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;yourapilink?day=tomorrow&quot;</span><span class="p">;</span><span class="w"> </span>
+<span class="p">...</span>
+</code></pre></div>
+<p>After your flutter environment is setup, configure either an Android environment, iOS environment, or both.</p>
 <hr />
 <h2 id="3-android-development-setup">3. Android Development Setup</h2>
 <h3 id="install-android-studio">Install Android Studio</h3>
@@ -1939,13 +1947,13 @@ Follow the official guide if this section does not work for you.</p>
 </div>
 </div>
 <hr />
-<h2 id="8-verify-installation">8. Verify Installation</h2>
+<h2 id="9-verify-installation">9. Verify Installation</h2>
 <p>Run <code>flutter doctor</code> again and ensure all checks pass:</p>
 <div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>doctor
 </code></pre></div>
 <p>You should see green checkmarks for Flutter, Android toolchain (if you configured Android), iOS toolchain (if you configured iOS), and connected devices.</p>
 <hr />
-<h2 id="9-troubleshooting">9. Troubleshooting</h2>
+<h2 id="8-troubleshooting">8. Troubleshooting</h2>
 <h3 id="flutter-sdk-not-found">Flutter SDK not found</h3>
 <p>Make sure you added <code>flutter/bin</code> to your system <code>PATH</code> and restart your terminal/IDE.</p>
 <h3 id="android-emulator-not-showing-up">Android Emulator not showing up</h3>

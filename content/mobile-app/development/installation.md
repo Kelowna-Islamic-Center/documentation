@@ -80,7 +80,7 @@ While you may use other editors, this guide and the rest of the documentation ar
 
 ---
 
-## 2. Install Dependencies
+## 2. Install Dependencies & Setup env
 
 Run the following to install project dependencies:
 
@@ -88,7 +88,19 @@ Run the following to install project dependencies:
 flutter pub get
 ```
 
-After that is setup, configure either an Android environment, iOS environment, or both.
+Once installed, duplicate the `lib/config.example.dart` file as `lib/config.dart` and modify the following values in the config file. 
+
+Leave everything else as default within the file unless required during development.
+
+```dart
+...
+// Replace 'yourapilink' with your prayerTimesFetch function API endpoint
+static String apiLink = "yourapilink";
+static String apiLinkForNextDay = "yourapilink?day=tomorrow"; 
+...
+```
+
+After your flutter environment is setup, configure either an Android environment, iOS environment, or both.
 
 ---
 
@@ -211,7 +223,7 @@ FlutterFire should now be configured properly and the app should function proper
 
 ---
 
-## 8. Verify Installation
+## 9. Verify Installation
 
 Run `flutter doctor` again and ensure all checks pass:
 
@@ -223,7 +235,7 @@ You should see green checkmarks for Flutter, Android toolchain (if you configure
 
 ---
 
-## 9. Troubleshooting
+## 8. Troubleshooting
 
 ### Flutter SDK not found
 
