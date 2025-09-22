@@ -139,10 +139,13 @@ After your flutter environment is setup, configure either an Android environment
 
 ### Install CocoaPods
 
-CocoaPods manages iOS dependencies.
+CocoaPods manages iOS dependencies. Install it using [homebrew](https://brew.sh/) by running the following:
+
+!!! warn
+    Do not install CocoaPods using macOS's built in ruby version by running `sudo gem install cocoapods`. This installation breaks packages in recent macOS versions. Use homebrew as mentioned below.
 
 ```bash
-sudo gem install cocoapods
+brew install cocoapods
 ```
 
 Verify installation:

@@ -1879,8 +1879,12 @@ Follow the official guide if this section does not work for you.</p>
 <li>Install command-line tools: <code>xcode-select --install</code></li>
 </ol>
 <h3 id="install-cocoapods">Install CocoaPods</h3>
-<p>CocoaPods manages iOS dependencies.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>gem<span class="w"> </span>install<span class="w"> </span>cocoapods
+<p>CocoaPods manages iOS dependencies. Install it using <a href="https://brew.sh/">homebrew</a> by running the following:</p>
+<div class="admonition warn">
+<p class="admonition-title">Warn</p>
+<p>Do not install CocoaPods using macOS's built in ruby version by running <code>sudo gem install cocoapods</code>. This installation breaks packages in recent macOS versions. Use homebrew as mentioned below.</p>
+</div>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>cocoapods
 </code></pre></div>
 <p>Verify installation:</p>
 <div class="highlight"><pre><span></span><code>pod<span class="w"> </span>--version
