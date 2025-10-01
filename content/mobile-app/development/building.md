@@ -82,14 +82,14 @@ Before beginning this part, ensure you have read and understood the [official Fl
 2. **Create a Release Build**
 
     ```bash
-    flutter build ios --release
+    flutter build ipa --release
     ```
 
-4. **Distribution**
+3. Upload the created output `build/ios/ipa/kelowna_islamic_center.ipa` file to the [Transporter App](https://apps.apple.com/us/app/transporter/id1450874784?mt=12). Ensure you are logged in and have it connected to the sam developer account the app was signed using.
 
-   * Use Xcode’s **Archive & Distribute** option.
-   * Distribute via **TestFlight** for internal/external testing.
-   * Submit to the **App Store** for public distribution.
+4. Create a new release on App Store Connect and select the build you uploaded using the Transporter app. Add any release notes or app listing modifications here.
+
+5. Submit the release for review for public distribution.
 
 ---
 

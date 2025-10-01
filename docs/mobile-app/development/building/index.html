@@ -1506,17 +1506,18 @@ storeFile=/Users/MyUser/android-keys/upload-keystore.jks
 </li>
 <li>
 <p><strong>Create a Release Build</strong></p>
-<div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>build<span class="w"> </span>ios<span class="w"> </span>--release
+<div class="highlight"><pre><span></span><code>flutter<span class="w"> </span>build<span class="w"> </span>ipa<span class="w"> </span>--release
 </code></pre></div>
 </li>
 <li>
-<p><strong>Distribution</strong></p>
+<p>Upload the created output <code>build/ios/ipa/kelowna_islamic_center.ipa</code> file to the <a href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12">Transporter App</a>. Ensure you are logged in and have it connected to the sam developer account the app was signed using.</p>
 </li>
 <li>
-<p>Use Xcode’s <strong>Archive &amp; Distribute</strong> option.</p>
+<p>Create a new release on App Store Connect and select the build you uploaded using the Transporter app. Add any release notes or app listing modifications here.</p>
 </li>
-<li>Distribute via <strong>TestFlight</strong> for internal/external testing.</li>
-<li>Submit to the <strong>App Store</strong> for public distribution.</li>
+<li>
+<p>Submit the release for review for public distribution.</p>
+</li>
 </ol>
 <hr />
 <h2 id="cicd-future-work">CI/CD (Future Work)</h2>
