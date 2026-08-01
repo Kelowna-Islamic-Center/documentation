@@ -1,67 +1,58 @@
 # Back-end Architecture Overview
 
-The **server-side** of the Kelowna Islamic Center (KIC) ecosystem is powered by **Firebase Cloud Functions**, **Firestore**, and **Cloud Tasks**.  
+The server-side of the Kelowna Islamic Center (KIC) ecosystem is powered by Firebase Cloud Functions, Firebase Cloud Messaging, and Firestore.
 
-These backend services handle the **automation, scheduling, and delivery** of notifications and content to the mobile app, web kiosk, and other client platforms.
+These backend services handle the distribution of announcement notifications to all active mobile devices, as well as the base API for prayer information data used by the mobile app and web kiosk.
 
-This section of the documentation provides a complete reference for how these server-side processes work, how they are structured, and how to extend or troubleshoot them.
-
----
-
-## Purpose of Server-Side Functions
-
-The KIC mobile and web platforms rely on accurate, timely, and consistent information.  
-Server-side functions ensure that:
-
-- **Prayer reminders** are fetched, scheduled, and delivered without manual intervention.
-- **Announcements** are instantly broadcast to the community when new updates are posted.
-- Notifications are localized to user preffered languages and properly routed to users who have opted in.
-- System complexity (timezones, retries, scheduling, and message formatting) is all handled automatically in the backend.
-
----
+This section of the documentation provides a reference for how these server-side processes work, how they are structured, and how to extend or troubleshoot them.
 
 ## Key Components
 
-**1. Get Prayer Times**
+### Firestore
 
-   - Fetches latest Athan and Iqamah times accurately for each prayer.
-   - Resolve prayer times based on selected calculation method. 
-   - See: [Prayer Times API](./prayer-times-api.md)
+Firestore is used exclusively for storing announcements. Prayer data is not stored in the cloud, as it is fetched from external services. Announcement data is fully contained within the `announcements` collection in Firestore.
 
-**2. Announcements**
+### Cloud Functions
 
-   - Firestore-backed system for storing announcements.  
-   - Automatically triggers notifications when new announcements are created.  
-   - See: [Announcements](./announcements.md)
+!!! info
+    If you are unfamiliar with Firebase Cloud Functions, you can learn more about them by [reading the official Firebase guide](https://firebase.google.com/docs/functions/).
 
-**3. Prayer Reminders**
+The current role of Cloud Functions is to handle backend events. The two supported events are:
 
-   - Daily scheduler (`prayerTimesAlertScheduler`) fetches and queues reminders.  
-   - Task queue processor (`sendPrayerAlert`) dispatches localized push notifications for Athan and Iqamah.  
-   - See: [Prayer Reminders](./prayer-reminders.md)
+   1. Fetching Prayer Times
 
-**4. Supporting Infrastructure**
+      This is handled by an `onRequest` HTTP endpoint function that, when requested, consolidates prayer time data.
 
-   - **Firestore** – Persistent storage of announcements.  
-   - **Cloud Tasks** – Time-precise delivery of prayer notifications.  
-   - **Cloud Messaging (FCM)** – Notification delivery to mobile apps.
+      **Full Documentation:** [Prayer Times API](./prayer-times-api.md)
 
----
+   2. Announcement Notifications
 
-## Developer Notes
+      Once a new announcement is created by a Masjid Admin, a function adds the required metadata to the announcement and then schedules a notification using Firebase Cloud Messaging.
 
-- All notifications are **topic-based** (`announcements`, `athanAlert`, `iqamah*MinuteAlert`, etc.), giving clients granular control over what to subscribe to.
-- Timezones are managed differently on client where it is local masjid time (`America/Vancouver`) and the server where it is server region (`America/Chicago`).
-- Functions are written to **fail gracefully** (e.g., no notification if config is missing, retries for transient errors).
-- This system is **event-driven and fully automated** — once deployed and configured, minimal admin intervention is needed.
+      **Full Documentation:** [Announcements](./announcements.md)
 
----
+The Firebase Cloud Functions implementation source code is maintained within the following repository:
+
+[:simple-github: Kelowna-Islamic-Center/cloud-functions](https://github.com/Kelowna-Islamic-Center/cloud-functions){ .md-button }
+
+### Cloud Messaging Notifications
+
+!!! info
+      If you are unfamiliar with Firebase Cloud Messaging, you can learn more about them by [reading the official Firebase guide](https://firebase.google.com/docs/cloud-messaging/).
+
+   The cloud function for announcements sends cloud notifications that are delivered to mobile app users over the internet rather than being locally triggered through Firebase Cloud Messaging (FCM).
+
+   Clients receive notifications by subscribing to topics. These topics are agreed beforehand and determine which notifications the client will receive. For example, if a mobile app client is subscribed to the announcements topic, it will receive a notification if a cloud function passes a notification payload to FCM that contains the announcements topic.
 
 ## Next Steps
 
 Explore each feature in detail:
 
-- [Cloud Functions Overview](./cloud-functions.md)
-- [Prayer Times API](./prayer-times-api.md)
-- [Announcements](./announcements.md)  
-- [Prayer Reminders](./prayer-reminders.md)
+* [Prayer Times API](./prayer-times-api.md)
+* [Announcements](./announcements.md)
+
+## Developer Notes
+
+* The `announcement` topic is only listened to if a locale identifier topic (eg. `lang-en`) is also provided, giving clients localized notifications within a given topic.
+* Timezones are managed differently on the client and server. The client uses the local masjid timezone (`America/Vancouver`), while the server runs in the configured region timezone (`America/Chicago`). All current functions handle this correctly; however, this should be considered when developing new functions.
+* Functions are designed to fail gracefully (e.g., no notification if configuration is missing, retries for transient errors).

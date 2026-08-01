@@ -13,10 +13,8 @@ nav:
 
   - Server Side:
       - Overview: server-side/index.md
-      - Cloud Functions: server-side/cloud-functions.md
       - Prayer Times API: server-side/prayer-times-api.md
       - Announcements: server-side/announcements.md
-      - Prayer Reminders: server-side/prayer-reminders.md
       - Development:
           - Installation: server-side/development/installation.md
           - Deployment: server-side/development/deployment.md
