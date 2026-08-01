@@ -23,8 +23,8 @@ nav:
       - Cloud Functions Reference:
         - PrayerTimesFetch: server-side/cloud-functions/prayer-times-fetch.md
         - AnnouncementAlert: server-side/cloud-functions/announcement-alert.md
-        - PrayerTimesAlertScheduler: server-side/cloud-functions/prayer-times-alert-scheduler.md
-        - SendPrayerAlert: server-side/cloud-functions/send-prayer-alert.md
+        - Legacy - PrayerTimesAlertScheduler: server-side/cloud-functions/legacy-prayer-times-alert-scheduler.md
+        - Legacy - SendPrayerAlert: server-side/cloud-functions/legacy-send-prayer-alert.md
 
   - Mobile App:
       - Overview: mobile-app/index.md

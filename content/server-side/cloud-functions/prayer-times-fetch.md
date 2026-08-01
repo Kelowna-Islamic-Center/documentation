@@ -4,14 +4,10 @@
 
 **Endpoint:** [`prayertimesfetch-ilgk6gl75q-uc.a.run.app/`](https://prayertimesfetch-ilgk6gl75q-uc.a.run.app/)
 
----
-
 ## Description
 
 Provides **daily prayer times** formatted for the app.  
 Supports fetching **today's** or **tomorrow's** prayer times and handles Asr time according to the selected madhhab.
-
----
 
 ## Query Parameters
 
@@ -20,14 +16,10 @@ Supports fetching **today's** or **tomorrow's** prayer times and handles Asr tim
 | `day`    | No       | `today` (default), `tomorrow` | Selects whether to fetch today's or tomorrow's times. |
 | `method` | No       | `hanafi`, `hanbali` | If `"hanbali"` is provided, Asr time is fetched from IslamicFinder API. If nothing provided, `hanafi` is automatically assumed. |
 
----
-
 ## Environment Variables
 
 - `API_LINK` – Base URL for BCMA prayer times
 - `ISLAMIC_FINDER_API_LINK` – Base URL for IslamicFinder API
-
----
 
 ## Response Format
 
@@ -39,8 +31,6 @@ An array of objects:
 | `start`| string | Athan time (HH:mm A) |
 | `iqamah`| string| Iqamah time (HH:mm A) |
 | `name` | string | English + Arabic prayer name |
-
----
 
 ## Example HTTP Response
 

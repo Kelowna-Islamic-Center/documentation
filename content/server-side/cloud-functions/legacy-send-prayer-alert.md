@@ -1,22 +1,21 @@
-# sendPrayerAlert
+# sendPrayerAlert - Legacy
+
+!!! warning
+    **This function is deprecated and is no longer included within the cloud-functions repository.**
+
+    This implementation was replaced with the modern local device native alerts system used by the app starting with mobile app v5. It is documented below for archival purposes only. This function remains deployed solely to allow legacy versions of the mobile app to continue functioning.
 
 **Type:** Task Queue Function (onTaskDispatched)
-
----
 
 ## Description
 
 Handles queued payloads created by `prayerTimesAlertScheduler` and sends localized push notifications for **athan** and **iqamah reminders**.
-
----
 
 ## Retry and Rate Limits
 
 - **Retries:** max 3 attempts
 - **Backoff:** 30 seconds minimum
 - **Max concurrent dispatches:** 5
-
----
 
 ## Payload Parameters
 
@@ -29,15 +28,11 @@ Handles queued payloads created by `prayerTimesAlertScheduler` and sends localiz
 | `minutes`     | number   | Minutes before iqamah (if applicable) |
 | `time`        | Date     | Scheduled notification time |
 
----
-
 ## Notification Behavior
 
 - Sends a localized notification for **each supported locale**.
 - Uses `locale.json` to translate prayer names and notification text.
 - Plays **Athan sound** for athan notifications (`athan_full` on Android, `athan_short.caf` on iOS).
-
----
 
 ## Example Notification Payload
 
