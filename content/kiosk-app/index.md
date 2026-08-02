@@ -15,6 +15,5 @@ You can find the full source code for the kiosk app on Github:
 The app is deployed using Firebase Hosting with SSR.
 For installation and deployment instructions, see:
 
-- [Installation](./installation.md)  
-- [Deployment](./deployment.md)  
+- [Development](./development.md)  
 - [Display Guide](./display-guide.md)  
