@@ -11,25 +11,28 @@
         <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/server-side/">
       
       
-        <link rel="prev" href="../architecture/design-language/">
+        <link rel="prev" href="../design-language/">
       
       
-        <link rel="next" href="cloud-functions/">
+        <link rel="next" href="prayer-times-api/">
+      
+      
+        
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Overview - Kelowna Islamic Center Documentation</title>
+        <title>Overview - Kelowna Islamic Center</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -52,7 +55,6 @@
     
       
 
-    
     
     
   </head>
@@ -86,9 +88,11 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Kelowna Islamic Center Documentation" class="md-header__button md-logo" aria-label="Kelowna Islamic Center Documentation" data-md-component="logo">
+    <a href=".." title="Kelowna Islamic Center" class="md-header__button md-logo" aria-label="Kelowna Islamic Center" data-md-component="logo">
       
   <img src="../assets/logo.png" alt="logo">
 
@@ -101,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Kelowna Islamic Center Documentation
+            Kelowna Islamic Center
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -131,11 +135,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -167,13 +173,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/Kelowna-Islamic-Center" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     View Repos on Github
@@ -190,89 +197,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
-          
-  
-  Architecture
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  Server Side
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../mobile-app/" class="md-tabs__link">
-          
-  
-  Mobile App
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../kiosk-app/" class="md-tabs__link">
-          
-  
-  Kiosk App
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -286,24 +210,22 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Kelowna Islamic Center Documentation" class="md-nav__button md-logo" aria-label="Kelowna Islamic Center Documentation" data-md-component="logo">
+    <a href=".." title="Kelowna Islamic Center" class="md-nav__button md-logo" aria-label="Kelowna Islamic Center" data-md-component="logo">
       
   <img src="../assets/logo.png" alt="logo">
 
     </a>
-    Kelowna Islamic Center Documentation
+    Kelowna Islamic Center
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/Kelowna-Islamic-Center" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     View Repos on Github
@@ -319,135 +241,107 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Architecture
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            Architecture
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Project Overview
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../architecture/application-architecture/" class="md-nav__link">
+      <a href="../application-architecture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Application Architecture
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../architecture/internationalization/" class="md-nav__link">
+      <a href="../internationalization/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Internationalization
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../architecture/design-language/" class="md-nav__link">
+      <a href="../design-language/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Design Language & Accessibility
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -457,14 +351,12 @@
   
   
   
+    
     
     
     
       
         
-        
-      
-      
         
       
     
@@ -473,25 +365,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Server Side
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Server Side
+            
+  
+    Server Side
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -514,10 +416,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -526,10 +434,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -550,18 +464,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose-of-server-side-functions" class="md-nav__link">
+  <a href="#key-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose of Server-Side Functions
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firestore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firestore
+      
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-messaging-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Messaging Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#key-components" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Components
+      
+        Next Steps
+      
     </span>
   </a>
   
@@ -570,16 +527,9 @@
         <li class="md-nav__item">
   <a href="#developer-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Developer Notes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
+        Developer Notes
+      
     </span>
   </a>
   
@@ -601,35 +551,19 @@
   
   
     <li class="md-nav__item">
-      <a href="cloud-functions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cloud Functions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="prayer-times-api/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Prayer Times API
+  
+
     
   </span>
+  
   
 
       </a>
@@ -648,10 +582,16 @@
       <a href="announcements/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Announcements
+  
+
     
   </span>
+  
   
 
       </a>
@@ -667,79 +607,19 @@
   
   
     <li class="md-nav__item">
-      <a href="prayer-reminders/" class="md-nav__link">
+      <a href="development/" class="md-nav__link">
         
+  
   
   <span class="md-ellipsis">
-    Prayer Reminders
     
-  </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
     Development
-    
-  </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Development
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="development/installation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Installation
     
   </span>
+  
   
 
       </a>
@@ -754,71 +634,46 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="development/deployment/" class="md-nav__link">
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
   
   <span class="md-ellipsis">
-    Deployment
     
-  </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
     Cloud Functions Reference
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Cloud Functions Reference
+            
+  
+    Cloud Functions Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -832,10 +687,16 @@
       <a href="cloud-functions/prayer-times-fetch/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     PrayerTimesFetch
+  
+
     
   </span>
+  
   
 
       </a>
@@ -854,10 +715,16 @@
       <a href="cloud-functions/announcement-alert/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     AnnouncementAlert
+  
+
     
   </span>
+  
   
 
       </a>
@@ -873,13 +740,19 @@
   
   
     <li class="md-nav__item">
-      <a href="cloud-functions/prayer-times-alert-scheduler/" class="md-nav__link">
+      <a href="cloud-functions/legacy-prayer-times-alert-scheduler/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    PrayerTimesAlertScheduler
+    
+  
+    Legacy - PrayerTimesAlertScheduler
+  
+
     
   </span>
+  
   
 
       </a>
@@ -895,13 +768,19 @@
   
   
     <li class="md-nav__item">
-      <a href="cloud-functions/send-prayer-alert/" class="md-nav__link">
+      <a href="cloud-functions/legacy-send-prayer-alert/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    SendPrayerAlert
+    
+  
+    Legacy - SendPrayerAlert
+  
+
     
   </span>
+  
   
 
       </a>
@@ -934,35 +813,46 @@
     
     
     
+    
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Mobile App
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Mobile App
+            
+  
+    Mobile App
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -976,10 +866,16 @@
       <a href="../mobile-app/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -994,55 +890,20 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Architecture
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Architecture
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../mobile-app/architecture/application-architecture/" class="md-nav__link">
+      <a href="../mobile-app/application-architecture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Application Architecture
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1058,13 +919,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../mobile-app/architecture/admin-tools/" class="md-nav__link">
+      <a href="../mobile-app/alert-system-overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Admin Tools
+    
+  
+    Prayer Alerts
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1080,24 +947,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../mobile-app/architecture/background-services/" class="md-nav__link">
+      <a href="../mobile-app/background-services/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Background Services
+  
+
     
   </span>
   
-
-      </a>
-    </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
+      </a>
     </li>
   
 
@@ -1112,9 +977,7 @@
     
     
     
-      
-      
-        
+    
       
     
     
@@ -1122,25 +985,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Development
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
-            Development
+            
+  
+    Development
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1154,10 +1027,16 @@
       <a href="../mobile-app/development/installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Installation
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1176,10 +1055,16 @@
       <a href="../mobile-app/development/building/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Building & Distribution
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1212,35 +1097,46 @@
     
     
     
+    
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Kiosk App
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Kiosk App
+            
+  
+    Kiosk App
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1254,10 +1150,16 @@
       <a href="../kiosk-app/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1273,35 +1175,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../kiosk-app/installation/" class="md-nav__link">
+      <a href="../kiosk-app/development/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Installation
+    
+  
+    Development
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kiosk-app/deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-    
-  </span>
   
 
       </a>
@@ -1320,10 +1206,16 @@
       <a href="../kiosk-app/display-guide/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Display Guide
+    
+  
+    Kiosk Display Guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1366,18 +1258,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose-of-server-side-functions" class="md-nav__link">
+  <a href="#key-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose of Server-Side Functions
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firestore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firestore
+      
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-messaging-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Messaging Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#key-components" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Components
+      
+        Next Steps
+      
     </span>
   </a>
   
@@ -1386,16 +1321,9 @@
         <li class="md-nav__item">
   <a href="#developer-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Developer Notes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
+        Developer Notes
+      
     </span>
   </a>
   
@@ -1411,6 +1339,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1421,61 +1350,50 @@
 
 
 <h1 id="back-end-architecture-overview">Back-end Architecture Overview</h1>
-<p>The <strong>server-side</strong> of the Kelowna Islamic Center (KIC) ecosystem is powered by <strong>Firebase Cloud Functions</strong>, <strong>Firestore</strong>, and <strong>Cloud Tasks</strong>.  </p>
-<p>These backend services handle the <strong>automation, scheduling, and delivery</strong> of notifications and content to the mobile app, web kiosk, and other client platforms.</p>
-<p>This section of the documentation provides a complete reference for how these server-side processes work, how they are structured, and how to extend or troubleshoot them.</p>
-<hr />
-<h2 id="purpose-of-server-side-functions">Purpose of Server-Side Functions</h2>
-<p>The KIC mobile and web platforms rely on accurate, timely, and consistent information.<br />
-Server-side functions ensure that:</p>
-<ul>
-<li><strong>Prayer reminders</strong> are fetched, scheduled, and delivered without manual intervention.</li>
-<li><strong>Announcements</strong> are instantly broadcast to the community when new updates are posted.</li>
-<li>Notifications are localized to user preffered languages and properly routed to users who have opted in.</li>
-<li>System complexity (timezones, retries, scheduling, and message formatting) is all handled automatically in the backend.</li>
-</ul>
-<hr />
+<p>The server-side of the Kelowna Islamic Center (KIC) ecosystem is powered by Firebase Cloud Functions, Firebase Cloud Messaging, and Firestore.</p>
+<p>These backend services handle the distribution of announcement notifications to all active mobile devices, as well as the base API for prayer information data used by the mobile app and web kiosk.</p>
+<p>This section of the documentation provides a reference for how these server-side processes work, how they are structured, and how to extend or troubleshoot them.</p>
 <h2 id="key-components">Key Components</h2>
-<p><strong>1. Get Prayer Times</strong></p>
-<ul>
-<li>Fetches latest Athan and Iqamah times accurately for each prayer.</li>
-<li>Resolve prayer times based on selected calculation method. </li>
-<li>See: <a href="prayer-times-api/">Prayer Times API</a></li>
-</ul>
-<p><strong>2. Announcements</strong></p>
-<ul>
-<li>Firestore-backed system for storing announcements.  </li>
-<li>Automatically triggers notifications when new announcements are created.  </li>
-<li>See: <a href="announcements/">Announcements</a></li>
-</ul>
-<p><strong>3. Prayer Reminders</strong></p>
-<ul>
-<li>Daily scheduler (<code>prayerTimesAlertScheduler</code>) fetches and queues reminders.  </li>
-<li>Task queue processor (<code>sendPrayerAlert</code>) dispatches localized push notifications for Athan and Iqamah.  </li>
-<li>See: <a href="prayer-reminders/">Prayer Reminders</a></li>
-</ul>
-<p><strong>4. Supporting Infrastructure</strong></p>
-<ul>
-<li><strong>Firestore</strong> – Persistent storage of announcements.  </li>
-<li><strong>Cloud Tasks</strong> – Time-precise delivery of prayer notifications.  </li>
-<li><strong>Cloud Messaging (FCM)</strong> – Notification delivery to mobile apps.</li>
-</ul>
-<hr />
-<h2 id="developer-notes">Developer Notes</h2>
-<ul>
-<li>All notifications are <strong>topic-based</strong> (<code>announcements</code>, <code>athanAlert</code>, <code>iqamah*MinuteAlert</code>, etc.), giving clients granular control over what to subscribe to.</li>
-<li>Timezones are managed differently on client where it is local masjid time (<code>America/Vancouver</code>) and the server where it is server region (<code>America/Chicago</code>).</li>
-<li>Functions are written to <strong>fail gracefully</strong> (e.g., no notification if config is missing, retries for transient errors).</li>
-<li>This system is <strong>event-driven and fully automated</strong> — once deployed and configured, minimal admin intervention is needed.</li>
-</ul>
-<hr />
+<h3 id="firestore">Firestore</h3>
+<p>Firestore is used exclusively for storing announcements. Prayer data is not stored in the cloud, as it is fetched from external services. Announcement data is fully contained within the <code>announcements</code> collection in Firestore.</p>
+<h3 id="cloud-functions">Cloud Functions</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are unfamiliar with Firebase Cloud Functions, you can learn more about them by <a href="https://firebase.google.com/docs/functions/">reading the official Firebase guide</a>.</p>
+</div>
+<p>The current role of Cloud Functions is to handle backend events. The two supported events are:</p>
+<ol>
+<li>
+<p>Fetching Prayer Times</p>
+<p>This is handled by an <code>onRequest</code> HTTP endpoint function that, when requested, consolidates prayer time data.</p>
+<p><strong>Full Documentation:</strong> <a href="prayer-times-api/">Prayer Times API</a></p>
+</li>
+<li>
+<p>Announcement Notifications</p>
+<p>Once a new announcement is created by a Masjid Admin, a function adds the required metadata to the announcement and then schedules a notification using Firebase Cloud Messaging.</p>
+<p><strong>Full Documentation:</strong> <a href="announcements/">Announcements</a></p>
+</li>
+</ol>
+<p>The Firebase Cloud Functions implementation source code is maintained within the following repository:</p>
+<p><a class="md-button" href="https://github.com/Kelowna-Islamic-Center/cloud-functions"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Kelowna-Islamic-Center/cloud-functions</a></p>
+<h3 id="cloud-messaging-notifications">Cloud Messaging Notifications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are unfamiliar with Firebase Cloud Messaging, you can learn more about them by <a href="https://firebase.google.com/docs/cloud-messaging/">reading the official Firebase guide</a>.</p>
+</div>
+<p>The cloud function for announcements sends cloud notifications that are delivered to mobile app users over the internet rather than being locally triggered through Firebase Cloud Messaging (FCM).</p>
+<p>Clients receive notifications by subscribing to topics. These topics are agreed beforehand and determine which notifications the client will receive. For example, if a mobile app client is subscribed to the announcements topic, it will receive a notification if a cloud function passes a notification payload to FCM that contains the announcements topic.</p>
 <h2 id="next-steps">Next Steps</h2>
 <p>Explore each feature in detail:</p>
 <ul>
-<li><a href="cloud-functions/">Cloud Functions Overview</a></li>
 <li><a href="prayer-times-api/">Prayer Times API</a></li>
-<li><a href="announcements/">Announcements</a>  </li>
-<li><a href="prayer-reminders/">Prayer Reminders</a></li>
+<li><a href="announcements/">Announcements</a></li>
+</ul>
+<h2 id="developer-notes">Developer Notes</h2>
+<ul>
+<li>The <code>announcement</code> topic is only listened to if a locale identifier topic (eg. <code>lang-en</code>) is also provided, giving clients localized notifications within a given topic.</li>
+<li>Timezones are managed differently on the client and server. The client uses the local masjid timezone (<code>America/Vancouver</code>), while the server runs in the configured region timezone (<code>America/Chicago</code>). All current functions handle this correctly; however, this should be considered when developing new functions.</li>
+<li>Functions are designed to fail gracefully (e.g., no notification if configuration is missing, retries for transient errors).</li>
 </ul>
 
 
@@ -1523,10 +1441,13 @@ Server-side functions ensure that:</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

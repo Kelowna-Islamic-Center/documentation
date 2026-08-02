@@ -8,28 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/kiosk-app/installation/">
+        <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/kiosk-app/development/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../deployment/">
+        <link rel="next" href="../display-guide/">
+      
+      
+        
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Installation - Kelowna Islamic Center Documentation</title>
+        <title>Development - Kelowna Islamic Center</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -54,7 +57,6 @@
 
     
     
-    
   </head>
   
   
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#developing-the-kiosk-app" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +88,11 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Kelowna Islamic Center Documentation" class="md-header__button md-logo" aria-label="Kelowna Islamic Center Documentation" data-md-component="logo">
+    <a href="../.." title="Kelowna Islamic Center" class="md-header__button md-logo" aria-label="Kelowna Islamic Center" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
@@ -101,13 +105,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Kelowna Islamic Center Documentation
+            Kelowna Islamic Center
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Development
             
           </span>
         </div>
@@ -131,11 +135,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -167,13 +173,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/Kelowna-Islamic-Center" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     View Repos on Github
@@ -190,89 +197,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
-          
-  
-  Architecture
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../server-side/" class="md-tabs__link">
-          
-  
-  Server Side
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../mobile-app/" class="md-tabs__link">
-          
-  
-  Mobile App
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
-          
-  
-  Kiosk App
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -286,24 +210,22 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Kelowna Islamic Center Documentation" class="md-nav__button md-logo" aria-label="Kelowna Islamic Center Documentation" data-md-component="logo">
+    <a href="../.." title="Kelowna Islamic Center" class="md-nav__button md-logo" aria-label="Kelowna Islamic Center" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
     </a>
-    Kelowna Islamic Center Documentation
+    Kelowna Islamic Center
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/Kelowna-Islamic-Center" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     View Repos on Github
@@ -319,135 +241,107 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Architecture
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            Architecture
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Project Overview
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/application-architecture/" class="md-nav__link">
+      <a href="../../application-architecture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Application Architecture
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/internationalization/" class="md-nav__link">
+      <a href="../../internationalization/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Internationalization
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/design-language/" class="md-nav__link">
+      <a href="../../design-language/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Design Language & Accessibility
+  
+
     
   </span>
+  
   
 
       </a>
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -458,35 +352,46 @@
     
     
     
-      
-      
-        
-      
     
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Server Side
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Server Side
+            
+  
+    Server Side
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -500,32 +405,16 @@
       <a href="../../server-side/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../server-side/cloud-functions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cloud Functions
-    
-  </span>
   
 
       </a>
@@ -544,10 +433,16 @@
       <a href="../../server-side/prayer-times-api/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Prayer Times API
+  
+
     
   </span>
+  
   
 
       </a>
@@ -566,10 +461,16 @@
       <a href="../../server-side/announcements/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Announcements
+  
+
     
   </span>
+  
   
 
       </a>
@@ -585,76 +486,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../server-side/prayer-reminders/" class="md-nav__link">
+      <a href="../../server-side/development/" class="md-nav__link">
         
+  
   
   <span class="md-ellipsis">
-    Prayer Reminders
     
-  </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
     Development
-    
-  </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Development
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../server-side/development/installation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Installation
     
   </span>
+  
   
 
       </a>
@@ -669,42 +513,10 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../server-side/development/deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
     
-      
-      
-        
+    
       
     
     
@@ -712,25 +524,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Cloud Functions Reference
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Cloud Functions Reference
+            
+  
+    Cloud Functions Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -744,10 +566,16 @@
       <a href="../../server-side/cloud-functions/prayer-times-fetch/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     PrayerTimesFetch
+  
+
     
   </span>
+  
   
 
       </a>
@@ -766,10 +594,16 @@
       <a href="../../server-side/cloud-functions/announcement-alert/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     AnnouncementAlert
+  
+
     
   </span>
+  
   
 
       </a>
@@ -785,13 +619,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../server-side/cloud-functions/prayer-times-alert-scheduler/" class="md-nav__link">
+      <a href="../../server-side/cloud-functions/legacy-prayer-times-alert-scheduler/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    PrayerTimesAlertScheduler
+    
+  
+    Legacy - PrayerTimesAlertScheduler
+  
+
     
   </span>
+  
   
 
       </a>
@@ -807,13 +647,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../server-side/cloud-functions/send-prayer-alert/" class="md-nav__link">
+      <a href="../../server-side/cloud-functions/legacy-send-prayer-alert/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    SendPrayerAlert
+    
+  
+    Legacy - SendPrayerAlert
+  
+
     
   </span>
+  
   
 
       </a>
@@ -846,35 +692,46 @@
     
     
     
+    
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Mobile App
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Mobile App
+            
+  
+    Mobile App
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -888,10 +745,16 @@
       <a href="../../mobile-app/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -906,55 +769,20 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Architecture
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Architecture
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/application-architecture/" class="md-nav__link">
+      <a href="../../mobile-app/application-architecture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Application Architecture
+  
+
     
   </span>
+  
   
 
       </a>
@@ -970,13 +798,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/admin-tools/" class="md-nav__link">
+      <a href="../../mobile-app/alert-system-overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Admin Tools
+    
+  
+    Prayer Alerts
+  
+
     
   </span>
+  
   
 
       </a>
@@ -992,24 +826,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mobile-app/architecture/background-services/" class="md-nav__link">
+      <a href="../../mobile-app/background-services/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Background Services
+  
+
     
   </span>
   
-
-      </a>
-    </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
+      </a>
     </li>
   
 
@@ -1024,9 +856,7 @@
     
     
     
-      
-      
-        
+    
       
     
     
@@ -1034,25 +864,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Development
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
-            Development
+            
+  
+    Development
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1066,10 +906,16 @@
       <a href="../../mobile-app/development/installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Installation
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1088,10 +934,16 @@
       <a href="../../mobile-app/development/building/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Building & Distribution
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1126,11 +978,9 @@
     
     
     
+    
       
         
-        
-      
-      
         
       
     
@@ -1139,25 +989,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Kiosk App
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Kiosk App
+            
+  
+    Kiosk App
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1171,10 +1031,16 @@
       <a href="../" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1202,10 +1068,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
-    Installation
+    
+  
+    Development
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1214,10 +1086,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
-    Installation
+    
+  
+    Development
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1238,45 +1116,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      
+        Setup
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
+  <a href="#running-locally" class="md-nav__link">
     <span class="md-ellipsis">
-      Development
+      
+        Running Locally
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-for-production" class="md-nav__link">
+  <a href="#deploying" class="md-nav__link">
     <span class="md-ellipsis">
-      Build for Production
+      
+        Deploying
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#production-firebase-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Production Firebase Project
+      
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#linting-type-checking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-to-a-new-firebase-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Linting &amp; Type Checking
+      
+        Deploying to a New Firebase Project
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying to a New Firebase Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-firebase-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regenerate Firebase Configuration
+      
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build and Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      
+        Next Steps
+      
     </span>
   </a>
   
@@ -1298,35 +1242,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../display-guide/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Display Guide
+    
+  
+    Kiosk Display Guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1369,45 +1297,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      
+        Setup
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
+  <a href="#running-locally" class="md-nav__link">
     <span class="md-ellipsis">
-      Development
+      
+        Running Locally
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-for-production" class="md-nav__link">
+  <a href="#deploying" class="md-nav__link">
     <span class="md-ellipsis">
-      Build for Production
+      
+        Deploying
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#production-firebase-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Production Firebase Project
+      
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#linting-type-checking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-to-a-new-firebase-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Linting &amp; Type Checking
+      
+        Deploying to a New Firebase Project
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying to a New Firebase Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-firebase-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regenerate Firebase Configuration
+      
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build and Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      
+        Next Steps
+      
     </span>
   </a>
   
@@ -1423,6 +1417,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1432,21 +1427,27 @@
   
 
 
-<h1 id="installation">Installation</h1>
-<p>The KIC Kiosk App is built with <a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://vitejs.dev/">Vite</a>.<br />
-This guide walks you through setting up the development environment and running the app locally.</p>
-<p>Before starting, ensure you have <a href="https://nodejs.org/">Node.js</a> <strong>18+</strong> installed.</p>
-<hr />
+<h1 id="developing-the-kiosk-app">Developing the Kiosk App</h1>
+<p>The KIC Kiosk App is built with SvelteKit and Vite, and is deployed using Firebase Hosting with Server-Side Rendering (SSR) via SvelteKit's Firebase adapter.</p>
+<p>This guide walks through setting up a local development environment, configuring Firebase, and deploying the application.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before getting started, ensure you have Node.js v20 or later.</p>
+<p>If you already have Node.js installed, install the Firebase CLI with:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>firebase-tools
+</code></pre></div>
+<p>Log in to Firebase:</p>
+<div class="highlight"><pre><span></span><code>firebase<span class="w"> </span>login
+</code></pre></div>
 <h2 id="setup">Setup</h2>
-<p><strong>1. Clone the Repository</strong></p>
+<p>Clone the Repository:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Kelowna-Islamic-Center/kiosk
 </code></pre></div>
-<p><strong>2. Install Dependencies</strong></p>
+<p>Install Dependencies:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
 </code></pre></div>
-<p><strong>3. Configure Environment Variables</strong></p>
-<p>Copy the <code>.env.example</code> file and rename it to <code>.env</code> in the project root. This file stores all your environment variables such as API and Firebase configuration values that the app needs to run.</p>
-<p>Example <code>.env</code>:</p>
+<p>Once installed, configure Environment Variables. This can be done by copying <code>.env.example</code> as <code>.env</code> in the project root.</p>
+<p>This file stores the API endpoint and Firebase configuration required by the application. Update the values to match your Firebase project.</p>
+<p>Example:</p>
 <div class="highlight"><pre><span></span><code>PUBLIC_API_LINK=&quot;https://prayertimesfetch-ilgk6gl75q-uc.a.run.app&quot;
 
 PUBLIC_FB_API_KEY=&quot;myapikey&quot;
@@ -1458,41 +1459,58 @@ PUBLIC_FB_APP_ID=&quot;myfbappid&quot;
 </code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>In SvelteKit, only variables starting with <code>PUBLIC_</code> are exposed to client-side code.<br />
-Do not put private keys (like Firebase service account credentials) in <code>.env</code>.</p>
+<p>In SvelteKit, only variables beginning with <code>PUBLIC_</code> are exposed to client-side code.
+Never store private credentials, such as Firebase service account keys, in <code>.env</code>.</p>
 </div>
-<hr />
-<h2 id="development">Development</h2>
-<p>To start the development server with hot-reloading:</p>
+<h2 id="running-locally">Running Locally</h2>
+<p>Start the development server with hot reloading:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>dev
 </code></pre></div>
-<p>By default, the app will be available at:</p>
+<p>The application will be available at:</p>
 <div class="highlight"><pre><span></span><code>http://localhost:5173
 </code></pre></div>
-<hr />
-<h2 id="build-for-production">Build for Production</h2>
-<p>To create an optimized production build:</p>
+<p>You can now make whatever changes are required.</p>
+<h2 id="deploying">Deploying</h2>
+<h3 id="production-firebase-project">Production Firebase Project</h3>
+<p>If you are a maintainer deploying to the existing production Firebase project, no additional Firebase configuration is required. Build and deploy the project:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>build
 </code></pre></div>
-<p>Preview the production build locally with:</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>preview
+<div class="highlight"><pre><span></span><code>firebase<span class="w"> </span>deploy
 </code></pre></div>
-<hr />
-<h2 id="linting-type-checking">Linting &amp; Type Checking</h2>
-<p>Run static analysis and type checks to catch issues early:</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>check
+<p>The application will be deployed to:</p>
+<p><a href="https://kelownaislamiccenter.web.app/">https://kelownaislamiccenter.web.app/</a></p>
+<h3 id="deploying-to-a-new-firebase-project">Deploying to a New Firebase Project</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is only required if you are deploying to your own Firebase project.</p>
+</div>
+<h4 id="regenerate-firebase-configuration">Regenerate Firebase Configuration</h4>
+<p>Initialize Firebase in the project:</p>
+<div class="highlight"><pre><span></span><code>firebase<span class="w"> </span>init<span class="w"> </span>hosting
 </code></pre></div>
-<p>Or run in watch mode:</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>check:watch
-</code></pre></div>
-<hr />
-<h2 id="notes">Notes</h2>
+<p>When prompted:</p>
 <ul>
-<li>The app uses <strong>SvelteKit + Vite</strong> with <strong>TypeScript</strong> enabled.</li>
-<li>Styles are built using <strong>Sass</strong> (<code>.scss</code> files supported).</li>
-<li>Ensure your <code>.env</code> file is properly configured before starting development or building for production.</li>
-<li>The kiosk fetches <strong>prayer times</strong> from the configured <code>PUBLIC_API_LINK</code> and integrates with Firebase services for data and messaging.</li>
+<li>Select your Firebase project (or create a new one).</li>
+<li>Choose <strong>Yes</strong> when asked to configure as a Single-Page Application.</li>
+<li>Allow <code>firebase.json</code> and <code>.firebaserc</code> to be overwritten.</li>
 </ul>
+<p>This regenerates the Firebase configuration files for your project.</p>
+<p>Ensure your <code>.env</code> file contains the Firebase configuration values for the project you just initialized.</p>
+<div class="highlight"><pre><span></span><code>PUBLIC_FB_API_KEY=&quot;...&quot;
+PUBLIC_FB_AUTH_DOMAIN=&quot;...&quot;
+PUBLIC_FB_PROJECT_ID=&quot;...&quot;
+PUBLIC_FB_STORAGE_BUCKET=&quot;...&quot;
+PUBLIC_FB_MESSAGING_SENDER_ID=&quot;...&quot;
+PUBLIC_FB_APP_ID=&quot;...&quot;
+</code></pre></div>
+<h4 id="build-and-deploy">Build and Deploy</h4>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>build
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>firebase<span class="w"> </span>deploy
+</code></pre></div>
+<p>Firebase will output the hosting URL for your project once deployment completes.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Once deployed, refresh any Masjid display screens configured to use the kiosk application so they begin serving the latest version.</p>
 
 
 
@@ -1539,10 +1557,13 @@ Do not put private keys (like Firebase service account credentials) in <code>.en
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

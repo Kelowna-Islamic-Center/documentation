@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/mobile-app/">
+        <link rel="canonical" href="https://kelowna-islamic-center.github.io/documentation/internationalization/">
       
       
-        <link rel="prev" href="../server-side/cloud-functions/legacy-send-prayer-alert/">
+        <link rel="prev" href="../application-architecture/">
       
       
-        <link rel="next" href="application-architecture/">
+        <link rel="next" href="../design-language/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Kelowna Islamic Center</title>
+        <title>Internationalization - Kelowna Islamic Center</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mobile-app-overview" class="md-skip">
+        <a href="#internationalization-i18n" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Internationalization
             
           </span>
         </div>
@@ -293,10 +293,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../internationalization/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internationalization
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -312,6 +339,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current State
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobile-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile App
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiosk-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiosk App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -687,8 +795,6 @@
       
   
   
-    
-  
   
   
     
@@ -701,11 +807,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -726,7 +832,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -741,37 +847,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mobile-app/" class="md-nav__link">
         
   
   
@@ -787,59 +866,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#high-level-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        High-Level Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Architecture
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -852,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application-architecture/" class="md-nav__link">
+      <a href="../mobile-app/application-architecture/" class="md-nav__link">
         
   
   
@@ -880,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="alert-system-overview/" class="md-nav__link">
+      <a href="../mobile-app/alert-system-overview/" class="md-nav__link">
         
   
   
@@ -908,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="background-services/" class="md-nav__link">
+      <a href="../mobile-app/background-services/" class="md-nav__link">
         
   
   
@@ -985,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/installation/" class="md-nav__link">
+      <a href="../mobile-app/development/installation/" class="md-nav__link">
         
   
   
@@ -1013,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/building/" class="md-nav__link">
+      <a href="../mobile-app/development/building/" class="md-nav__link">
         
   
   
@@ -1219,32 +1245,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#high-level-features" class="md-nav__link">
+  <a href="#current-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        High-Level Features
+        Current State
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mobile-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile App
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-functions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture
+        Cloud Functions
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#kiosk-app" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Development
+        Kiosk App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Guidelines
       
     </span>
   </a>
@@ -1271,33 +1325,58 @@
   
 
 
-<h1 id="mobile-app-overview">Mobile App Overview</h1>
-<p>The Kelowna Islamic Center Mobile App is the primary app used by the community to stay connected with the masjid. Its core function is prayer time visibility, with announcements, alerts, and admin workflows built around that foundation.</p>
-<p>This section serves as the entry point for mobile documentation. It links to architecture references and development guides without repeating the implementation details already covered in those pages.</p>
-<p>The app is built with Flutter and ships from a single codebase to both Android and iOS.</p>
-<p>You can find the full source code for the mobile app on Github:</p>
-<p><a class="md-button" href="https://github.com/Kelowna-Islamic-Center/mobile"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Kelowna-Islamic-Center/mobile</a></p>
-<h2 id="high-level-features">High-Level Features</h2>
-<p>The mobile app currently focuses on four core capabilities:</p>
+<h1 id="internationalization-i18n">Internationalization (i18n)</h1>
+<p>Supporting multiple languages is a core requirement across all KIC applications and backend services. The community includes many members who primarily speak Arabic, so every user-facing feature should be designed with localization in mind from the beginning rather than added later.</p>
+<p>The platform currently supports English and Arabic, but the architecture should remain flexible enough to accommodate additional languages in the future.</p>
+<h2 id="current-state">Current State</h2>
+<h3 id="mobile-app">Mobile App</h3>
+<p>The Flutter mobile application is fully internationalized.</p>
 <ul>
-<li>Prayer time display synchronized with backend prayer data.</li>
-<li>Announcements delivered through Firebase-backed messaging and Firestore updates.</li>
-<li>Prayer alerts for athan and iqamah reminders.</li>
-<li>Admin tools used to create and manage announcement content for both mobile and kiosk consumers.</li>
+<li>All UI components, labels, and system messages are localized.</li>
+<li>Users can switch languages directly within the app.</li>
+<li>Local notifications, such as athan and iqamah reminders, are generated using the user's selected language.</li>
+<li>Push notifications sent from Firebase Cloud Messaging are automatically delivered in the correct language through language-specific topic subscriptions.</li>
 </ul>
-<h2 id="architecture">Architecture</h2>
-<p>Architecture details are documented in the dedicated pages below:</p>
+<h3 id="cloud-functions">Cloud Functions</h3>
+<p>Cloud Functions are responsible for sending localized push notifications.</p>
+<p>Announcement documents stored in Firestore contain both English and Arabic content. When an announcement notification is sent through Firebase Cloud Messaging, clients receive the appropriate language based on the notification topic they are subscribed to.</p>
+<p>This means localization is handled before the notification reaches the device, ensuring users only receive messages in their selected language.</p>
+<h3 id="kiosk-app">Kiosk App</h3>
+<p>The SvelteKit kiosk application currently has basic multilingual support but is not fully internationalized.</p>
+<p>At present:</p>
 <ul>
-<li><a href="application-architecture/">Mobile App Architecture</a></li>
-<li><a href="alert-system-overview/">Prayer Alerts Architecture</a></li>
-<li><a href="background-services/">Background Services</a></li>
+<li>Announcement slides rotate between English and Arabic.</li>
+<li>Some UI text is hardcoded in both languages.</li>
+<li>Prayer names are displayed as combined bilingual strings.</li>
 </ul>
-<h2 id="development">Development</h2>
-<p>For setup and release workflows, use the development guides:</p>
+<p>While this works for the current kiosk deployment, it is not a scalable approach. UI strings should eventually be moved into dedicated translation files so the interface can switch languages in a consistent way, just as the mobile application does. Potential ways this could be done is rotating text as the application cycles through languages every few minutes.</p>
+<h2 id="development-guidelines">Development Guidelines</h2>
+<p>When adding new features, keep the following principles in mind:</p>
+<ol>
+<li>
+<p><strong>Never hardcode user-facing text.</strong></p>
+<p>Store strings in the project's localization files and load them dynamically. This keeps translations consistent and makes adding future languages significantly easier.</p>
+</li>
+<li>
+<p><strong>Follow the localization approach used by the project you're working on.</strong></p>
+<p>For example:</p>
 <ul>
-<li><a href="development/installation/">Installation</a>  </li>
-<li><a href="development/building/">Deployment</a>  </li>
+<li><strong>Flutter:</strong> Use <code>.arb</code> files together with the <code>intl</code> package.</li>
+<li><strong>Cloud Functions:</strong> Send localized notifications using language-specific FCM topics.</li>
+<li><strong>Kiosk App:</strong> Migrate hardcoded strings into a proper translation system as the application evolves.</li>
 </ul>
+</li>
+<li>
+<p><strong>Test every feature in multiple languages.</strong></p>
+<p>Before merging changes, verify that:</p>
+<ul>
+<li>All user-facing text is translated.</li>
+<li>Layouts remain usable in both English and Arabic.</li>
+<li>Missing translations are identified and fixed instead of silently falling back to English whenever possible.</li>
+</ul>
+</li>
+</ol>
+<p>Internationalization should be considered part of feature development rather than a final polishing step. Any new UI, notification, or user-facing message should be designed with localization in mind from the outset.</p>
 
 
 
