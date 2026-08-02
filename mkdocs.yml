@@ -1,15 +1,14 @@
-site_name: Kelowna Islamic Center Documentation
+site_name: Kelowna Islamic Center
 site_url: https://kelowna-islamic-center.github.io/documentation/
 
 docs_dir: content
 site_dir: docs
 
 nav:
-  - Architecture:
-      - Project Overview: index.md
-      - Application Architecture: architecture/application-architecture.md
-      - Internationalization: architecture/internationalization.md
-      - Design Language & Accessibility: architecture/design-language.md
+  - Project Overview: index.md
+  - Application Architecture: application-architecture.md
+  - Internationalization: internationalization.md
+  - Design Language & Accessibility: design-language.md
 
   - Server Side:
       - Overview: server-side/index.md
@@ -41,7 +40,6 @@ theme:
   name: material
   logo: assets/logo.png
   features:
-    - navigation.tabs
     - navigation.sections
   palette: 
     # Palette toggle for dark mode
