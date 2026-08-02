@@ -12,7 +12,7 @@ All apps and user interfaces should consistently use the Masjid's color palette 
 
 You can use additional Material Design colors or variations; however, try to stay within this color palette for the primary colors in all Masjid designs.
 
-![Colour Palette](../assets/color-palette.png)
+![Colour Palette](assets/color-palette.png)
 
 ### UI Scaling & Consistency Across Platforms
 

@@ -57,7 +57,7 @@ At a high level:
 
 The overall system architecture is illustrated below.
 
-![KIC Application Architecture](../assets/architecture_diagram.png)
+![KIC Application Architecture](assets/architecture_diagram.png)
 
 Although the diagram contains several interacting services, the communication follows a relatively simple pattern: both client applications rely on Firebase as the central backend, while Cloud Functions coordinate business logic, external API integration, and notification delivery.
 
