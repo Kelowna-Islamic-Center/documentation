@@ -2,13 +2,11 @@
 
 This guide provides recommendations for setting up and running the Kiosk App on a dedicated masjid display screen.
 
-There is no single correct way to configure the app, the steps outlined here are just to assist IT administrators or masjid maintainers in deploying new prayer displays within prayer halls. Please note that this process requires technical knowledge and should not be attempted by someone without experience in system administration.
-
----
+There is no single correct way to configure the app, the steps outlined here are just to help IT administrators or masjid maintainers in deploying new prayer displays within prayer halls. Please note that this process requires some technical sysadmin knowledge and should not be attempted by someone without any experience.
 
 ## Recommended System Setup
 
-To run it on a display, its recommended you use a lightweight system with minimal background processes so that all resources are dedicated to running just the app.
+To run it on a display, its recommended you use a lightweight system with minimal background processes so that all resources are dedicated to just running the app.
 
 ### Hardware Recommendations
 
@@ -19,13 +17,10 @@ To run it on a display, its recommended you use a lightweight system with minima
 ### Operating System Options
 
 - **Lightweight Linux Distro**  
-  Recommended: [Lubuntu](https://lubuntu.me/) or [Raspberry Pi OS Lite + minimal desktop]  
-  These provide a stable and lightweight environment with minimal overhead.
+  The current masjid app uses [Lubuntu](https://lubuntu.me/) however you can use something like Raspberry Pi OS Lite with a minimal desktop.
 
 - **Windows (Stripped/Minimal Installation)**  
   A lightweight Windows installation can also be used, but it should be configured to disable unnecessary startup apps, automatic updates, and background processes.
-
----
 
 ## Installing Chrome and Configuring Auto Launch
 
@@ -114,8 +109,6 @@ The kiosk relies on running Google Chrome or an equivalent browser in kiosk mode
         ```bash
             sudo reboot
         ```
-
----
 
 ## Best Practices
 

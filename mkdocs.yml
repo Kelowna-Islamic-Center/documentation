@@ -34,9 +34,8 @@ nav:
 
   - Kiosk App:
       - Overview: kiosk-app/index.md
-      - Installation: kiosk-app/installation.md
-      - Deployment: kiosk-app/deployment.md
-      - Display Guide: kiosk-app/display-guide.md
+      - Development: kiosk-app/development.md
+      - Kiosk Display Guide: kiosk-app/display-guide.md
 
 theme:
   name: material
