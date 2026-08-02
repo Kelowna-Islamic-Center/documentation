@@ -1,8 +1,6 @@
 # Building & Distributing to App Stores
 
-This guide explains how to build and distribute the **Kelowna Islamic Center Mobile App** for both **Android** and **iOS**. The app is built with **Flutter** and connects to Firebase services (Authentication, Firestore, Cloud Messaging, and Cloud Functions).
-
----
+This guide explains how to build and distribute the flutter mobile App for both Android and iOS.
 
 ## Prerequisites
 
@@ -16,8 +14,6 @@ This guide explains how to build and distribute the **Kelowna Islamic Center Mob
     !!! warning
         If these files are misconfigured or not created, Firebase features (authentication, messaging, Firestore, etc.) will not function.
 
----
-
 ## Building for Android
 
 Before beginning this part, ensure you have read and understood the [official Flutter Android deployment guide](https://docs.flutter.dev/deployment/android) as this is just a short reference adapted from the official guide.
@@ -28,7 +24,7 @@ Before beginning this part, ensure you have read and understood the [official Fl
 1. **Signing**
 
     1. Create a `key.properties` file in the root of the `android` folder.
-    2. Add your store password, key passowrd, alias, and path to the keystore file to the `key.properties` file (you should have all of these provided if you are deploying to the official KIC Play Store listing). This should look something like this:
+    2. Add your store password, key passowrd, alias, and path to the keystore file to the `key.properties` file (you should have all of these provided by KIC if you are deploying to the official KIC Play Store listing). This should look something like this:
 
         ```env
         storePassword=myStorePassword
@@ -41,10 +37,10 @@ Before beginning this part, ensure you have read and understood the [official Fl
 
 2. **Create a Release Build**
 
-    Increment the version name and number in `pubspec.yaml`. Not doing this will cause Google Play to deny you from releasing the app as the version number will already be existing. This should look something like this if the previous version was `4.1.0+26`:
+    Increment the version name and number in `pubspec.yaml`. Not doing this will cause Google Play to deny you from releasing the app as the version number will already be existing. This should look something like this if the previous version was `5.0.0+27`:
 
     ```yaml
-    version: 4.1.1+27
+    version: 5.0.1+28
     ```
 
     and then build the release APK file:
@@ -60,11 +56,9 @@ Before beginning this part, ensure you have read and understood the [official Fl
     ```
 
 3. **Distribution**
-    * Create a new release in the **Google Play Console**
-    * Upload the generated **AAB** or **APK** file.
+    * Create a new release in the Google Play Console
+    * Upload the generated .aab or .apk file.
     * For testing before release, use Internal Testing.
-
----
 
 ## Building for iOS
 
@@ -91,12 +85,14 @@ Before beginning this part, ensure you have read and understood the [official Fl
 
 5. Submit the release for review for public distribution.
 
----
-
 ## CI/CD (Future Work)
 
-Currently, builds are performed manually. In the future, **CI/CD pipelines** should be added through Github Actions to automate: 
+Currently, builds are performed manually. In the future, CI/CD pipelines should be added through Github Actions to automate:
 
 * Test runs before builds
 * Automated distribution to Play Store/TestFlight
 * Version bumping
+
+--
+
+The app binary should now be ready to distribute to the public or internal testers.

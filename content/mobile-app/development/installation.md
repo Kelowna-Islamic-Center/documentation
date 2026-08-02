@@ -1,10 +1,8 @@
 # Mobile App Installation Guide
 
-This guide will walk you through setting up a complete development environment to contribute to the app. It covers installation of Flutter, Android and iOS development tools, and Firebase configuration.
+This guide will walk you through setting up a complete development environment to contribute to the app. It covers installation of Flutter, Android and iOS development tools, and FlutterFire configuration.
 
 By the end of this guide, you’ll have a fully working local development setup, ready to build and run the app on Android and iOS devices.
-
----
 
 ## Pre-requisites
 
@@ -78,8 +76,6 @@ While you may use other editors, this guide and the rest of the documentation ar
 
     5. Install the VS Code Flutter and Dart extensions
 
----
-
 ## 2. Install Dependencies & Setup env
 
 Run the following to install project dependencies:
@@ -88,7 +84,7 @@ Run the following to install project dependencies:
 flutter pub get
 ```
 
-Once installed, duplicate the `lib/config.example.dart` file as `lib/config.dart` and modify the following values in the config file. 
+Once installed, duplicate the `lib/config.example.dart` file as `lib/config.dart` and modify the following values in the config file.
 
 Leave everything else as default within the file unless required during development.
 
@@ -101,8 +97,6 @@ static String apiLinkForNextDay = "yourapilink?day=tomorrow";
 ```
 
 After your flutter environment is setup, configure either an Android environment, iOS environment, or both.
-
----
 
 ## 3. Android Development Setup
 
@@ -125,11 +119,10 @@ After your flutter environment is setup, configure either an Android environment
 5. In Android Studio, create an emulator device targeting the latest Android release
 6. Close Android Studio and launch VS Code. You are now ready to test on and build for Android.
 
----
-
 ## 4. iOS Development Setup (macOS Only)
 
-> iOS development requires a macOS machine with Xcode installed.
+!!! info
+    iOS development requires a macOS machine with Xcode installed.
 
 ### Install Xcode
 
@@ -154,9 +147,7 @@ Verify installation:
 pod --version
 ```
 
-Close Xcode and launch VS Code. You are now ready to test on and build for iOS.
-
----
+Close Xcode and launch VS Code. You are now ready to test and build for iOS.
 
 ## 5. Firebase Setup
 
@@ -164,7 +155,7 @@ You now need to configure the app to connect to your firebase project. The mobil
 
 ### Step 1. Install FlutterFire CLI
 
-The **FlutterFire CLI** configures Firebase for your app:
+The FlutterFire CLI configures Firebase for your app:
 
 ```bash
 dart pub global activate flutterfire_cli
@@ -204,8 +195,6 @@ Download the following files from the Firebase Console:
 
 FlutterFire should now be configured properly and the app should function properly now.
 
----
-
 ## 6. Run the App
 
 === "VS Code (Recommended)"
@@ -224,9 +213,7 @@ FlutterFire should now be configured properly and the app should function proper
         flutter run
         ```
 
----
-
-## 9. Verify Installation
+## 7. Verify Installation
 
 Run `flutter doctor` again and ensure all checks pass:
 
@@ -235,8 +222,6 @@ flutter doctor
 ```
 
 You should see green checkmarks for Flutter, Android toolchain (if you configured Android), iOS toolchain (if you configured iOS), and connected devices.
-
----
 
 ## 8. Troubleshooting
 
