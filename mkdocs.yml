@@ -15,9 +15,7 @@ nav:
       - Overview: server-side/index.md
       - Prayer Times API: server-side/prayer-times-api.md
       - Announcements: server-side/announcements.md
-      - Development:
-          - Installation: server-side/development/installation.md
-          - Deployment: server-side/development/deployment.md
+      - Development: server-side/development.md
       - Cloud Functions Reference:
         - PrayerTimesFetch: server-side/cloud-functions/prayer-times-fetch.md
         - AnnouncementAlert: server-side/cloud-functions/announcement-alert.md

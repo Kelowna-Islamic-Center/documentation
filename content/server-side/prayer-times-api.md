@@ -1,16 +1,11 @@
 # Prayer Times API
 
-Since the Kelowna Islamic Center is part of the **BC Muslim Association (BCMA)**, all prayer times come directly from the BCMA API. However, this data is not usable directly and needs to be further processed into a JSON format that the mobile app and the kiosk app can better handle.
+Since the Kelowna Islamic Center is part of the BC Muslim Association (BCMA), all prayer times come directly from the BCMA's own public API. However, this data is not usable directly and needs to be further processed into a JSON format that the mobile app and the kiosk app can better handle.
 
-All clients, like the mobile app and the kiosk app, periodically check the [KIC API endpoint](https://prayertimesfetch-ilgk6gl75q-uc.a.run.app/) which is served by the [`prayerTimesFetch`](./cloud-functions/prayer-times-fetch.md) cloud function. This cloud function makes the request to the BCMA API and parses it into a cleaner format that the applications then receive.
+All clients, like the mobile app and the kiosk app, periodically check for new prayer times data by requesting the [KIC API endpoint](https://prayertimesfetch-ilgk6gl75q-uc.a.run.app/) which is served by this [`prayerTimesFetch`](./cloud-functions/prayer-times-fetch.md) cloud function. This cloud function then makes the request to the BCMA API and parses it into a cleaner format that the applications then receive.
 
 !!! note
-    The application architecture supports any API if required, not just the BCMA API. All that is required is that the `prayerTimesFetch` function be modified to accommodate the new API.
-
-!!! info
-    You can read more about cloud functions and this specific cloud function on the [Cloud Functions page](./cloud-functions.md).
-
----
+    This application architecture supports any API if required, not just the BCMA API. All that is required is that the `prayerTimesFetch` function be modified to accommodate the new API.
 
 ## The BCMA API
 
@@ -20,7 +15,7 @@ The BCMA API endpoint for Kelowna Islamic Center (BCMA Organization 7) is:
 https://org.thebcma.com/api/Prayertimes/GetPrayertimeByDate?organizationId=7&dt={date}
 ```
 
-* `{date}` formatted as `MM-DD-YYYY` in Pacific Time. The cloud function, when making its request, is configured to either use today's date or tomorrow's date.
+* `{date}` formatted as `MM-DD-YYYY` in Pacific Time. The cloud function, when making its request, is configured to either use today's date or tomorrow's date as it provides both times.
 
 ### Response Format
 
@@ -60,10 +55,10 @@ After all processing is complete, the cloud function outputs the following resul
 ```json
 [
   {
-    "id": "fajr",
-    "start": "04:02 AM",
-    "iqamah": "05:00 AM",
-    "name": "Fajr - الفجر"
+    "id": "fajr",           // Used as the actual prayer identifier within business logic
+    "start": "04:02 AM",    // Kelowna Athan time
+    "iqamah": "05:00 AM",   // Masjid Iqamaah Time
+    "name": "Fajr - الفجر"    // Display text on kiosk (mobile app uses native localized text)
   },
   {
     "id": "shurooq",
@@ -104,4 +99,4 @@ After all processing is complete, the cloud function outputs the following resul
 ]
 ```
 
-Once again, [full documentation of the prayerTimesFetch cloud function is available](./cloud-functions/prayer-times-fetch.md) with details on what parameters the API endpoint accepts and what the output looks like.
+[Full documentation of the prayerTimesFetch cloud function is available](./cloud-functions/prayer-times-fetch.md) with details on what parameters the API endpoint accepts and what the output looks like.
