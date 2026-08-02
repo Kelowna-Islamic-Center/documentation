@@ -35,7 +35,7 @@ This function runs daily to:
 
 ## Example Task Payload
 
-This task payload is later parsed by [sendPrayerAlert](./send-prayer-alert.md) when it is activated by the cloud scheduler. It provides it with context on what notification to send and where to send it when it is activated.
+This task payload is later parsed by [sendPrayerAlert](./legacy-send-prayer-alert.md) when it is activated by the cloud scheduler. It provides it with context on what notification to send and where to send it when it is activated.
 
 ```json
 {

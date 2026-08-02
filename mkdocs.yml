@@ -23,10 +23,9 @@ nav:
 
   - Mobile App:
       - Overview: mobile-app/index.md
-      - Architecture:
-        - Application Architecture: mobile-app/architecture/application-architecture.md
-        - Admin Tools: mobile-app/architecture/admin-tools.md
-        - Background Services: mobile-app/architecture/background-services.md
+      - Application Architecture: mobile-app/application-architecture.md
+      - Prayer Alerts: mobile-app/alert-system-overview.md
+      - Background Services: mobile-app/background-services.md
       - Development:
         - Installation: mobile-app/development/installation.md
         - Building & Distribution: mobile-app/development/building.md
